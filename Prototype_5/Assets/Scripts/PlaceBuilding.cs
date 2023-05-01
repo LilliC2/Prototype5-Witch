@@ -40,16 +40,30 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
             {
                 //needs to be only done once
                 heldBuidling = Instantiate(buildingPrefabs[buildingPrefabIndex]);
+                
                 isInstantiatedBuilding = true;
+                
             }
             
 
             MoveBuilding(heldBuidling);
 
+            //place it down
             if(Input.GetMouseButtonDown(0))
             {
+                _BM.moneyProducingHouses++;
+                //remove costs
                 isBuildingHeld = false;
                 isInstantiatedBuilding=false;
+            }
+
+            //cancel
+            if (Input.GetMouseButtonDown(1))
+            {
+                Destroy(heldBuidling);
+                isBuildingHeld = false;
+                isInstantiatedBuilding = false;
+                
             }
 
         }

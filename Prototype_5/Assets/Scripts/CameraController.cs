@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+public class CameraController : GameBehaviour
 {
     float minFOV = 15f;
     float maxFOV = 90f;
@@ -24,9 +24,7 @@ public class CameraController : MonoBehaviour
         
         if(Input.GetMouseButton(1))
         {
-            print("Holding button");
             float rotation = Input.GetAxis("Mouse X");
-            print(rotation);
             pivotPoint.transform.Rotate(0, rotation*10, 0);
 
         }
