@@ -5,7 +5,8 @@ using UnityEngine;
 public class GameBehaviour : LC.Behaviour //inherits from
 {
     //unquie to this project
-    protected static BuildingSystem _BS { get { return BuildingSystem.Instance; } }
+    protected static UIManager _UI { get { return UIManager.Instance; } }
+    protected static PlaceBuilding _PB { get { return PlaceBuilding.Instance; } }
 
 
     public enum Gamestate { Title, Pause, Instructions, Playing, GameOver }
