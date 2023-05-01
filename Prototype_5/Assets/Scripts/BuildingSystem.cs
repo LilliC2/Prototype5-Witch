@@ -13,9 +13,10 @@ public class BuildingSystem : GameBehaviour<BuildingSystem>
     private Grid grid;
     [SerializeField] private Tilemap MainTileMap;
     [SerializeField] private TileBase whiteTile;
+    [SerializeField] private GameObject pivot;
 
     public GameObject prefab1;
-    public GameObject prefab2;
+    public GameObject landPrefab;
 
     private PlaceableObject objectToPlace;
 
@@ -33,14 +34,7 @@ public class BuildingSystem : GameBehaviour<BuildingSystem>
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.A))
-        {
-            InitalizeWithObject(prefab1);
-        }
-        if(Input.GetKeyDown(KeyCode.B))
-        {
-            InitalizeWithObject(prefab2);
-        }
+
     }
 
     public static Vector3 GetMouseWorldPosition()
@@ -64,12 +58,28 @@ public class BuildingSystem : GameBehaviour<BuildingSystem>
         return _position;
     }
 
-    public void InitalizeWithObject(GameObject _prefab)
+    public void InitalizeWithObject(GameObject _prefab, Vector3 position)
     {
-        Vector3 position = SnapCoordinateToGride(Vector3.zero);
+        
 
         GameObject obj = Instantiate(_prefab,position,Quaternion.identity);
         objectToPlace = obj.GetComponent<PlaceableObject>();
         obj.AddComponent<DragObject>();
     }
+
+    #region buttonSpawn
+
+    public void InitalizeLand()
+    {
+        Vector3 position = SnapCoordinateToGride(Vector3.zero);
+        InitalizeWithObject(landPrefab, position);
+    }
+    public void InitalizeHouse()
+    {
+        Vector3 position = SnapCoordinateToGride(pivot.transform.position);
+        InitalizeWithObject(landPrefab, position);
+    }
+
+
+    #endregion
 }

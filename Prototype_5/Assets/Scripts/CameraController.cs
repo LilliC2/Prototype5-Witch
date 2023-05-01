@@ -8,6 +8,7 @@ public class CameraController : MonoBehaviour
     float maxFOV = 90f;
     float senesitivity = 50;
     float FOV;
+    public float WASDsens;
     public GameObject pivotPoint;
     // Update is called once per frame
     private void Start()
@@ -33,6 +34,6 @@ public class CameraController : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        pivotPoint.transform.Translate(new Vector3(horizontal, 0, vertical));
+        pivotPoint.transform.Translate(new Vector3(horizontal, 0, vertical) * WASDsens);
     }
 }
