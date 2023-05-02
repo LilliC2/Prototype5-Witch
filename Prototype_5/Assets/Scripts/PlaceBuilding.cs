@@ -44,6 +44,7 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
                 //needs to be only done once
                 heldBuidling = Instantiate(buildingPrefabs[buildingPrefabIndex]);
                 if (heldBuidling.name.Contains("Wall")) tag = "Wall";
+                if (heldBuidling.name.Contains("Road")) tag = "Road";
                 heldBuidling.tag = "HeldBuilding";
                 isInstantiatedBuilding = true;
                 

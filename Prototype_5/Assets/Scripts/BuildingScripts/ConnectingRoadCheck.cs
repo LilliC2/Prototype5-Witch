@@ -71,7 +71,7 @@ public class ConnectingRoadCheck : GameBehaviour
             }
 
             #region corner
-            if (right && down)
+            if (right && down && !left && !up)
             {
                 //check if already correct piece
                 if (gameObject.name.Contains("RoadCorner") && gameObject.transform.eulerAngles.y == 0)
@@ -93,7 +93,7 @@ public class ConnectingRoadCheck : GameBehaviour
 
 
             }
-            else if (left && down)
+            else if (left && down && !right && !up)
             {
                 //check if already correct piece
                 if (gameObject.name.Contains("RoadCorner") && gameObject.transform.eulerAngles.y == 90)
@@ -116,7 +116,7 @@ public class ConnectingRoadCheck : GameBehaviour
 
 
             }
-            else if (left && up)
+            else if (left && up && !right && !down)
             {
                 //check if already correct piece
                 if (gameObject.name.Contains("RoadCorner") && gameObject.transform.eulerAngles.y == 180)
@@ -138,7 +138,7 @@ public class ConnectingRoadCheck : GameBehaviour
 
 
             }
-            else if (right && up)
+            else if (right && up && !left && !down)
             {
                 //check if already correct piece
                 if (gameObject.name.Contains("RoadCorner") && gameObject.transform.eulerAngles.y == 270)
@@ -191,8 +191,11 @@ public class ConnectingRoadCheck : GameBehaviour
             }
             if (left || right && !up && !down)
             {
-                if (leftHit.collider.name.Contains("Corner") || rightHit.collider.name.Contains("Corner") || leftHit.collider.name.Contains("Cross") || rightHit.collider.name.Contains("Cross"))
-                {                     //check if already correct piece
+                if (leftHit.collider.name.Contains("Road") || rightHit.collider.name.Contains("Road"))
+                {
+                    print("flip to side");
+
+                    //check if already correct piece
                     if (gameObject.name.Contains("RoadStraight") && gameObject.transform.eulerAngles.y == 90)
                     {
                         print("Correct Piece");
@@ -202,7 +205,7 @@ public class ConnectingRoadCheck : GameBehaviour
                     {
                         //place new object
                         //rotate new object
-                        GameObject.Instantiate(roadPrefabs[3], gameObject.transform.position, Quaternion.Euler(0, 90, 0));
+                        GameObject.Instantiate(roadPrefabs[2], gameObject.transform.position, Quaternion.Euler(0, 90, 0));
 
                         //delete old object
                         Destroy(gameObject, 0);
@@ -219,7 +222,7 @@ public class ConnectingRoadCheck : GameBehaviour
             #endregion
 
             #region T
-            if (up && right && down)
+            if (up && right && down && !left)
             {
                 print("Should T");
                 //check if already correct piece
@@ -241,8 +244,87 @@ public class ConnectingRoadCheck : GameBehaviour
                     Destroy(this, 0);
                 }
             }
+            if (left && right && down && !up)
+            {
+                print("Should T");
+                //check if already correct piece
+                if (gameObject.name.Contains("T") && gameObject.transform.eulerAngles.y == 90)
+                {
+                    print("Correct Piece");
+                    return;
+                }
+                else
+                {
+                    print("Make T");
+                    //place new object
+                    //rotate new object
+                    GameObject.Instantiate(roadPrefabs[3], gameObject.transform.position, Quaternion.Euler(0, 90, 0));
+
+                    //delete old object
+                    Destroy(gameObject, 0);
+                    //destroy script
+                    Destroy(this, 0);
+                }
+            }
+            if (left && up && down && !right)
+            {
+                print("Should T");
+                //check if already correct piece
+                if (gameObject.name.Contains("T") && gameObject.transform.eulerAngles.y == 180)
+                {
+                    print("Correct Piece");
+                    return;
+                }
+                else
+                {
+                    print("Make T");
+                    //place new object
+                    //rotate new object
+                    GameObject.Instantiate(roadPrefabs[3], gameObject.transform.position, Quaternion.Euler(0, 180, 0));
+
+                    //delete old object
+                    Destroy(gameObject, 0);
+                    //destroy script
+                    Destroy(this, 0);
+                }
+            }
+            if (left && up && right && !down)
+            {
+                print("Should T");
+                //check if already correct piece
+                if (gameObject.name.Contains("T") && gameObject.transform.eulerAngles.y == 270)
+                {
+                    print("Correct Piece");
+                    return;
+                }
+                else
+                {
+                    print("Make T");
+                    //place new object
+                    //rotate new object
+                    GameObject.Instantiate(roadPrefabs[3], gameObject.transform.position, Quaternion.Euler(0, 270, 0));
+
+                    //delete old object
+                    Destroy(gameObject, 0);
+                    //destroy script
+                    Destroy(this, 0);
+                }
+            }
             #endregion
 
+            #region cross
+
+            if(left && up && down && right)
+            {
+                GameObject.Instantiate(roadPrefabs[1], gameObject.transform.position, Quaternion.Euler(0, 0, 0));
+
+                //delete old object
+                Destroy(gameObject, 0);
+                //destroy script
+                Destroy(this, 0);
+            }
+            #endregion
         }
+
     }
 }

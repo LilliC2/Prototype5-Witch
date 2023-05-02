@@ -194,7 +194,7 @@ public class ConnectingBuildingCheck : GameBehaviour
             #endregion
 
             //switch internal corner piece
-            #region internal corner piece
+            #region internal corner piece WIP
 
             if(left && down)
             {

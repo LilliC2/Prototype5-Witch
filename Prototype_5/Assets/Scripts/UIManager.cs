@@ -44,6 +44,17 @@ public class UIManager : GameBehaviour<UIManager>
         _PB.isBuildingHeld = true;
         _PB.buildingPrefabIndex = 1;
     }
+    
+    public void PlaceBuilding2()
+    {
+        _PB.isBuildingHeld = true;
+        _PB.buildingPrefabIndex = 2;
+    }
+    public void PlaceBuilding3()
+    {
+        _PB.isBuildingHeld = true;
+        _PB.buildingPrefabIndex = 3;
+    }
 
     public void UpdateDay()
     {
@@ -62,13 +73,13 @@ public class UIManager : GameBehaviour<UIManager>
         switch (_switch)
         {
             case 0:
-                _LM.TimeMultiplier = 5;
+                _LM.TimeMultiplier = 30;
                 break;
             case 1:
-                _LM.TimeMultiplier = 15;
+                _LM.TimeMultiplier = 50;
                 break;
             case 2:
-                _LM.TimeMultiplier = 30;
+                _LM.TimeMultiplier = 100;
                 break;
         }
     }
