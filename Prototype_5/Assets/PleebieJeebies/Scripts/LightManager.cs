@@ -62,11 +62,10 @@ public class LightManager : GameBehaviour<LightManager>
             if(!dayAdded)
             {
                 dayCount++;
-                _BM.DayCycleEndGain();
                 dayAdded = true;
+                _EM.CallEndDay();
             }
             
-            _UI.UpdateDay(dayCount);
             
         }
 

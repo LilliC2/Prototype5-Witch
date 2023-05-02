@@ -10,6 +10,7 @@ public class GameBehaviour : LC.Behaviour //inherits from
     protected static BuildingManager _BM { get { return BuildingManager.Instance; } }
     protected static CurrencyManager _CM { get { return CurrencyManager.Instance; } }
     protected static LightManager _LM { get { return LightManager.Instance; } }
+    protected static EventManager _EM { get { return EventManager.Instance; } }
 
 
     public enum Gamestate { Title, Pause, Instructions, Playing, GameOver }

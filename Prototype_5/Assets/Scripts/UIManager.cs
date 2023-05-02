@@ -28,6 +28,11 @@ public class UIManager : GameBehaviour<UIManager>
         _PB.isBuildingHeld = true;
         _PB.buildingPrefabIndex = 0;
     }
+    public void PlaceBuilding1()
+    {
+        _PB.isBuildingHeld = true;
+        _PB.buildingPrefabIndex = 1;
+    }
 
     public void UpdateDay(int _dayCount)
     {

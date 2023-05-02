@@ -51,7 +51,6 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
             //place it down
             if(Input.GetMouseButtonDown(0))
             {
-                _BM.moneyProducingHouses++;
                 //remove costs
                 isBuildingHeld = false;
                 isInstantiatedBuilding=false;
