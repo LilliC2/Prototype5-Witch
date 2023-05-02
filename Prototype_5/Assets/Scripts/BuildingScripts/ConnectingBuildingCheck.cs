@@ -6,8 +6,6 @@ using UnityEngine;
 public class ConnectingBuildingCheck : GameBehaviour
 {
     public GameObject[] wallPrefabs;
-    public GameObject[] roadPrefabs;
-
     
     bool right;
     bool left;
@@ -28,6 +26,7 @@ public class ConnectingBuildingCheck : GameBehaviour
     void Update()
     {
         //check tag then switch so it knows which prefabs to use
+
 
         //things walls should check
         /*

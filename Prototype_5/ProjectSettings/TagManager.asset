@@ -8,6 +8,7 @@ TagManager:
   - Land
   - Wall
   - HeldBuilding
+  - Road
   layers:
   - Default
   - TransparentFX

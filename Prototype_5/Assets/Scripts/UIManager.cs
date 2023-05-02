@@ -10,6 +10,17 @@ public class UIManager : GameBehaviour<UIManager>
     public TMP_Text moneyCountText;
     public TMP_Text dayCounterText;
 
+    void OnEnable()
+    {
+        EventManager.EndofDay += UpdateDay;
+    }
+
+    void OnDisable()
+    {
+        EventManager.EndofDay += UpdateDay;
+        EventManager.EndofDay += UpdateMoney;
+    }
+
 
     // Start is called before the first frame update
     void Start()
@@ -34,16 +45,16 @@ public class UIManager : GameBehaviour<UIManager>
         _PB.buildingPrefabIndex = 1;
     }
 
-    public void UpdateDay(int _dayCount)
+    public void UpdateDay()
     {
         //late use do tween here
-        dayCounterText.text = "Day " + _dayCount;
+        dayCounterText.text = "Day " + _LM.dayCount;
     }
-    public void UpdateMoney(int _manaCount, int _moneyCount)
+    public void UpdateMoney()
     {
         //late use do tween here
-        manaCountText.text = "Mana: " + manaCountText;
-        moneyCountText.text = "Money: " + moneyCountText;
+        manaCountText.text = "Mana: " + _CM.manaCount;
+        moneyCountText.text = "Money: " + _CM.moneyCount;
     }
 
     public void UpdateDayTimeMultipler(int _switch)

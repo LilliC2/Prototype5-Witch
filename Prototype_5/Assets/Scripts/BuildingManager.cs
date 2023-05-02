@@ -33,6 +33,7 @@ public class BuildingManager : GameBehaviour<BuildingManager>
     public Building[] buildings;
 
     public Building BasicHouse;
+    public Building BasicManaHouse;
 
     // Start is called before the first frame update
     void Start()
@@ -62,5 +63,12 @@ public class BuildingManager : GameBehaviour<BuildingManager>
         BasicHouse.description = "A small starter home.";
         BasicHouse.moneyPerDay = 5;
         BasicHouse.manaPerDay = 0;
+        
+        BasicManaHouse = new Building();
+        BasicManaHouse.buildingName = "Basic Mana House";
+        BasicManaHouse.ID = 2;
+        BasicManaHouse.description = "A small factory that produces a bit of mana.";
+        BasicManaHouse.moneyPerDay = 0;
+        BasicManaHouse.manaPerDay = 5;
     }
 }

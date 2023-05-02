@@ -14,7 +14,7 @@ public class LightManager : GameBehaviour<LightManager>
 
     private const float inverseDayLength = 1f / 1440f;
 
-    int dayCount = 0;
+    public int dayCount = 0;
     bool dayAdded = false;
 
     /// <summary>
