@@ -5,7 +5,7 @@ using UnityEngine.Tilemaps;
 
 public class PlaceBuilding : GameBehaviour<PlaceBuilding>
 {
-    [SerializeField] Tilemap buildingTileMap;
+    public Tilemap buildingTileMap;
     public GameObject testCube;
     public GameObject testCube2;
     Vector3 houseTilePos;
@@ -16,6 +16,7 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
     bool isInstantiatedBuilding;
     public GameObject heldBuidling;
     string tag;
+    public GameObject crossHair;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +38,7 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
 
         if(isBuildingHeld)
         {
+            crossHair.SetActive(true);
             if(!isInstantiatedBuilding)
             {
                 //needs to be only done once
@@ -46,6 +48,7 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
                 isInstantiatedBuilding = true;
                 
             }
+            
             
 
             MoveBuilding(heldBuidling);
@@ -72,6 +75,7 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
             }
 
         }
+        else crossHair.SetActive(false);
 
         //MoveBuilding(testCube);
 
@@ -84,6 +88,13 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
         Vector3 housePos = new Vector3(newMousePos.x, 1, newMousePos.z);
         var tpos = buildingTileMap.WorldToCell(housePos);
         houseTilePos = new Vector3(tpos.x, 1, tpos.y);
+
+        //check if there is something in the targetted spot using raycast
+        //if(Physics.Raycast)
+
+
         _buildingSelected.transform.position = houseTilePos;
+        crossHair.transform.position = houseTilePos;
+
     }
 }

@@ -49,6 +49,7 @@ MonoBehaviour:
   wallPrefabs:
   - {fileID: 7455058873121663879}
   - {fileID: 8664081760180841082, guid: cba1fe512c8c89743a0345e6f150b5ff, type: 3}
+  - {fileID: 7764918052108277222, guid: 9e4270b55fcdde54e80c51ef48df8f38, type: 3}
   roadPrefabs: []
 --- !u!65 &8775064328447851731
 BoxCollider:
