@@ -78,19 +78,88 @@ public class ConnectingBuildingCheck : MonoBehaviour
         if(right && down)
         {
             //check if already correct piece
-            if(gameObject.name == "WallCorner" && gameObject.transform.position.y == 90)
+            if(gameObject.name.Contains("WallCorner") && gameObject.transform.eulerAngles.y == 0)
             {
+                print("Correct Piece");
                 return;
             }
             else
             {
-                print("Right and Down!");
                 //place new object
                 //rotate new object
-                Instantiate(wallPrefabs[1], gameObject.transform.position, Quaternion.Euler(0, 0, 0));
+                GameObject.Instantiate(wallPrefabs[0], gameObject.transform.position, Quaternion.Euler(0, 0, 0));
 
                 //delete old object
-                Destroy(gameObject);
+                Destroy(gameObject,0);
+                //destroy script
+                Destroy(this,0);
+            }
+
+            
+        }
+        else if(left && down)
+        {
+            //check if already correct piece
+            if(gameObject.name.Contains("WallCorner") && gameObject.transform.eulerAngles.y == 90)
+            {
+                print("Correct Piece");
+                return;
+            }
+            else
+            {
+                print(gameObject.name);
+                //place new object
+                //rotate new object
+                GameObject.Instantiate(wallPrefabs[0], gameObject.transform.position, Quaternion.Euler(0, 90, 0));
+
+                //delete old object
+                Destroy(gameObject,0);
+                //destroy script
+                Destroy(this,0);
+            }
+
+            
+        }
+        else if(left && up)
+        {
+            //check if already correct piece
+            if(gameObject.name.Contains("WallCorner") && gameObject.transform.eulerAngles.y == 180)
+            {
+                print("Correct Piece");
+                return;
+            }
+            else
+            {
+                //place new object
+                //rotate new object
+                GameObject.Instantiate(wallPrefabs[0], gameObject.transform.position, Quaternion.Euler(0, 180, 0));
+
+                //delete old object
+                Destroy(gameObject,0);
+                //destroy script
+                Destroy(this,0);
+            }
+
+            
+        }
+        else if(right && up)
+        {
+            //check if already correct piece
+            if(gameObject.name.Contains("WallCorner") && gameObject.transform.eulerAngles.y == 270)
+            {
+                print("Correct Piece");
+                return;
+            }
+            else
+            {
+                //place new object
+                //rotate new object
+                GameObject.Instantiate(wallPrefabs[0], gameObject.transform.position, Quaternion.Euler(0, 270, 0));
+
+                //delete old object
+                Destroy(gameObject,0);
+                //destroy script
+                Destroy(this,0);
             }
 
             
