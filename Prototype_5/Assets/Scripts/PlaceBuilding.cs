@@ -14,7 +14,8 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
     public GameObject[] buildingPrefabs;
     public int buildingPrefabIndex;
     bool isInstantiatedBuilding;
-    GameObject heldBuidling;
+    public GameObject heldBuidling;
+    string tag;
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +41,8 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
             {
                 //needs to be only done once
                 heldBuidling = Instantiate(buildingPrefabs[buildingPrefabIndex]);
-                
+                if (heldBuidling.name.Contains("Wall")) tag = "Wall";
+                heldBuidling.tag = "HeldBuilding";
                 isInstantiatedBuilding = true;
                 
             }
@@ -54,6 +56,9 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
                 //remove costs
                 isBuildingHeld = false;
                 isInstantiatedBuilding=false;
+                print(tag);
+                heldBuidling.tag = tag;
+                heldBuidling = null;
             }
 
             //cancel
@@ -62,6 +67,7 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
                 Destroy(heldBuidling);
                 isBuildingHeld = false;
                 isInstantiatedBuilding = false;
+                
                 
             }
 

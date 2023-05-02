@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class ConnectingBuildingCheck : MonoBehaviour
+public class ConnectingBuildingCheck : GameBehaviour
 {
     public GameObject[] wallPrefabs;
     public GameObject[] roadPrefabs;
@@ -13,6 +14,10 @@ public class ConnectingBuildingCheck : MonoBehaviour
     bool up;
     bool down;
 
+    RaycastHit upHit;
+    RaycastHit downHit;
+    RaycastHit leftHit;
+    RaycastHit rightHit;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,134 +40,337 @@ public class ConnectingBuildingCheck : MonoBehaviour
          * if road either side of wall, turn into entrance
          */
 
-        //check +z and -z
-        if(Physics.Raycast(this.transform.position, Vector3.right,out RaycastHit raycastHit, 2f))
+        //only change once placed
+
+        if(_PB.heldBuidling != gameObject)
         {
-            if(raycastHit.collider.CompareTag("Wall"))
+            //check +z and -z
+            if (Physics.Raycast(this.transform.position, Vector3.right, out rightHit, 1f))
             {
-                print("hit object right");
-                right = true;
+                if (rightHit.collider.CompareTag("Wall"))
+                {
+                    print("hit object right");
+                    right = true;
+                }
+                else right = false;
+
+            }
+
+            if (Physics.Raycast(this.transform.position, Vector3.left, out leftHit, 1f))
+            {
+                if (leftHit.collider.CompareTag("Wall"))
+                {
+                    print("hit object left");
+                    left = true;
+                }
+                else left = false;
+            }
+            if (Physics.Raycast(this.transform.position, Vector3.forward, out upHit, 1f))
+            {
+
+                if (upHit.collider.CompareTag("Wall"))
+                {
+                    print("hit object up");
+                    up = true;
+                    
+                }
+                else up = false;
+            }
+            if (Physics.Raycast(this.transform.position, Vector3.back, out downHit, 1f))
+            {
+
+                if (downHit.collider.CompareTag("Wall"))
+                {
+                    print("hit object down");
+                    down = true;
+                    print("Down hit is " + downHit.collider.name);
+                }
+                else down = false;
+            }
+
+
+            //switch to corner piece
+            #region corner
+            if (right && down)
+            {
+                //check if already correct piece
+                if (gameObject.name.Contains("WallCorner") && gameObject.transform.eulerAngles.y == 0)
+                {
+                    print("Correct Piece");
+                    return;
+                }
+                else
+                {
+                    //place new object
+                    //rotate new object
+                    GameObject.Instantiate(wallPrefabs[0], gameObject.transform.position, Quaternion.Euler(0, 0, 0));
+
+                    //delete old object
+                    Destroy(gameObject, 0);
+                    //destroy script
+                    Destroy(this, 0);
+                }
+
+
+            }
+            else if (left && down)
+            {
+                //check if already correct piece
+                if (gameObject.name.Contains("WallCorner") && gameObject.transform.eulerAngles.y == 90)
+                {
+                    print("Correct Piece");
+                    return;
+                }
+                else
+                {
+                    print(gameObject.name);
+                    //place new object
+                    //rotate new object
+                    GameObject.Instantiate(wallPrefabs[0], gameObject.transform.position, Quaternion.Euler(0, 90, 0));
+
+                    //delete old object
+                    Destroy(gameObject, 0);
+                    //destroy script
+                    Destroy(this, 0);
+                }
+
+
+            }
+            else if (left && up)
+            {
+                //check if already correct piece
+                if (gameObject.name.Contains("WallCorner") && gameObject.transform.eulerAngles.y == 180)
+                {
+                    //print("Correct Piece");
+                    return;
+                }
+                else
+                {
+                    //place new object
+                    //rotate new object
+                    GameObject.Instantiate(wallPrefabs[0], gameObject.transform.position, Quaternion.Euler(0, 180, 0));
+
+                    //delete old object
+                    Destroy(gameObject, 0);
+                    //destroy script
+                    Destroy(this, 0);
+                }
+
+
+            }
+            else if (right && up)
+            {
+                //check if already correct piece
+                if (gameObject.name.Contains("WallCorner") && gameObject.transform.eulerAngles.y == 270)
+                {
+                    print("Correct Piece");
+                    return;
+                }
+                else
+                {
+                    //place new object
+                    //rotate new object
+                    GameObject.Instantiate(wallPrefabs[0], gameObject.transform.position, Quaternion.Euler(0, 270, 0));
+
+                    //delete old object
+                    Destroy(gameObject, 0);
+                    //destroy script
+                    Destroy(this, 0);
+                }
+
+
+            }
+
+            #endregion
+
+            //switch to face outside if connected to corner
+            #region face corner side
+            if(up)
+            {
+                if (upHit.collider.name.Contains("WallCorner") && upHit.collider.transform.eulerAngles.y == 0)
+                {
+                    //check if already correct piece
+                    if (gameObject.name.Contains("WallStraight") && gameObject.transform.eulerAngles.y == 270)
+                    {
+                        print("Correct Piece");
+                        return;
+                    }
+                    else
+                    {
+                        //place new object
+                        //rotate new object
+                        GameObject.Instantiate(wallPrefabs[1], gameObject.transform.position, Quaternion.Euler(0, 270, 0));
+
+                        //delete old object
+                        Destroy(gameObject, 0);
+                        //destroy script
+                        Destroy(this, 0);
+                    }
+
+                }
+                else if (upHit.collider.name.Contains("WallCorner") && upHit.collider.transform.eulerAngles.y == 90)
+                {
+                    //check if already correct piece
+                    if (gameObject.name.Contains("WallStraight") && gameObject.transform.eulerAngles.y == 90)
+                    {
+                        print("Correct Piece");
+                        return;
+                    }
+                    else
+                    {
+                        //place new object
+                        //rotate new object
+                        GameObject.Instantiate(wallPrefabs[1], gameObject.transform.position, Quaternion.Euler(0, 90, 0));
+
+                        //delete old object
+                        Destroy(gameObject, 0);
+                        //destroy script
+                        Destroy(this, 0);
+                    }
+
+                }
             }
             
-        }
-        
-        if(Physics.Raycast(this.transform.position, Vector3.left,out raycastHit, 2f))
-        {
-            if (raycastHit.collider.CompareTag("Wall"))
+            if(down)
             {
-                print("hit object left");
-                left = true;
-            }
-        }
-        if(Physics.Raycast(this.transform.position, Vector3.forward,out raycastHit, 2f))
-        {
+                if (downHit.collider.name.Contains("WallCorner") && downHit.collider.transform.eulerAngles.y == 180)
+                {
+                    //check if already correct piece
+                    if (gameObject.name.Contains("WallStraight") && gameObject.transform.eulerAngles.y == 90)
+                    {
+                        print("Correct Piece");
+                        return;
+                    }
+                    else
+                    {
+                        //place new object
+                        //rotate new object
+                        GameObject.Instantiate(wallPrefabs[1], gameObject.transform.position, Quaternion.Euler(0, 90, 0));
 
-            if (raycastHit.collider.CompareTag("Wall"))
-            {
-                print("hit object up");
-                up = true;
-            }
-        }
-        if(Physics.Raycast(this.transform.position, Vector3.back,out raycastHit, 2f))
-        {
+                        //delete old object
+                        Destroy(gameObject, 0);
+                        //destroy script
+                        Destroy(this, 0);
+                    }
 
-            if (raycastHit.collider.CompareTag("Wall"))
-            {
-                print("hit object down");
-                down = true;
-            }
-        }
+                }
+                else if (downHit.collider.name.Contains("WallCorner") && downHit.collider.transform.eulerAngles.y == 270)
+                {
+                    //check if already correct piece
+                    if (gameObject.name.Contains("WallStraight") && gameObject.transform.eulerAngles.y == 270)
+                    {
+                        print("Correct Piece");
+                        return;
+                    }
+                    else
+                    {
+                        //place new object
+                        //rotate new object
+                        GameObject.Instantiate(wallPrefabs[1], gameObject.transform.position, Quaternion.Euler(0, 270, 0));
 
+                        //delete old object
+                        Destroy(gameObject, 0);
+                        //destroy script
+                        Destroy(this, 0);
+                    }
 
-        //switch to corner piece
-        if(right && down)
-        {
-            //check if already correct piece
-            if(gameObject.name.Contains("WallCorner") && gameObject.transform.eulerAngles.y == 0)
-            {
-                print("Correct Piece");
-                return;
-            }
-            else
-            {
-                //place new object
-                //rotate new object
-                GameObject.Instantiate(wallPrefabs[0], gameObject.transform.position, Quaternion.Euler(0, 0, 0));
-
-                //delete old object
-                Destroy(gameObject,0);
-                //destroy script
-                Destroy(this,0);
+                }
             }
 
-            
-        }
-        else if(left && down)
-        {
-            //check if already correct piece
-            if(gameObject.name.Contains("WallCorner") && gameObject.transform.eulerAngles.y == 90)
+            if(left)
             {
-                print("Correct Piece");
-                return;
-            }
-            else
-            {
-                print(gameObject.name);
-                //place new object
-                //rotate new object
-                GameObject.Instantiate(wallPrefabs[0], gameObject.transform.position, Quaternion.Euler(0, 90, 0));
+                if (leftHit.collider.name.Contains("WallCorner") && leftHit.collider.transform.eulerAngles.y == 270)
+                {
+                    //check if already correct piece
+                    if (gameObject.name.Contains("WallStraight") && gameObject.transform.eulerAngles.y == 180)
+                    {
+                        print("Correct Piece");
+                        return;
+                    }
+                    else
+                    {
+                        //place new object
+                        //rotate new object
+                        GameObject.Instantiate(wallPrefabs[1], gameObject.transform.position, Quaternion.Euler(0, 180, 0));
 
-                //delete old object
-                Destroy(gameObject,0);
-                //destroy script
-                Destroy(this,0);
-            }
+                        //delete old object
+                        Destroy(gameObject, 0);
+                        //destroy script
+                        Destroy(this, 0);
+                    }
 
-            
-        }
-        else if(left && up)
-        {
-            //check if already correct piece
-            if(gameObject.name.Contains("WallCorner") && gameObject.transform.eulerAngles.y == 180)
-            {
-                print("Correct Piece");
-                return;
-            }
-            else
-            {
-                //place new object
-                //rotate new object
-                GameObject.Instantiate(wallPrefabs[0], gameObject.transform.position, Quaternion.Euler(0, 180, 0));
+                }
+                else if (leftHit.collider.name.Contains("WallCorner") && leftHit.collider.transform.eulerAngles.y == 0)
+                {
+                    //check if already correct piece
+                    if (gameObject.name.Contains("WallStraight") && gameObject.transform.eulerAngles.y == 0)
+                    {
+                        print("Correct Piece");
+                        return;
+                    }
+                    else
+                    {
+                        //place new object
+                        //rotate new object
+                        GameObject.Instantiate(wallPrefabs[1], gameObject.transform.position, Quaternion.Euler(0, 0, 0));
 
-                //delete old object
-                Destroy(gameObject,0);
-                //destroy script
-                Destroy(this,0);
-            }
+                        //delete old object
+                        Destroy(gameObject, 0);
+                        //destroy script
+                        Destroy(this, 0);
+                    }
 
-            
-        }
-        else if(right && up)
-        {
-            //check if already correct piece
-            if(gameObject.name.Contains("WallCorner") && gameObject.transform.eulerAngles.y == 270)
-            {
-                print("Correct Piece");
-                return;
-            }
-            else
-            {
-                //place new object
-                //rotate new object
-                GameObject.Instantiate(wallPrefabs[0], gameObject.transform.position, Quaternion.Euler(0, 270, 0));
-
-                //delete old object
-                Destroy(gameObject,0);
-                //destroy script
-                Destroy(this,0);
+                }
             }
 
-            
+            if(right)
+            {
+                if (rightHit.collider.name.Contains("WallCorner") && rightHit.collider.transform.eulerAngles.y == 90)
+                {
+                    //check if already correct piece
+                    if (gameObject.name.Contains("WallStraight") && gameObject.transform.eulerAngles.y == 0)
+                    {
+                        print("Correct Piece");
+                        return;
+                    }
+                    else
+                    {
+                        //place new object
+                        //rotate new object
+                        GameObject.Instantiate(wallPrefabs[1], gameObject.transform.position, Quaternion.Euler(0, 0, 0));
+
+                        //delete old object
+                        Destroy(gameObject, 0);
+                        //destroy script
+                        Destroy(this, 0);
+                    }
+
+                }
+                else if (rightHit.collider.name.Contains("WallCorner") && rightHit.collider.transform.eulerAngles.y == 180)
+                {
+                    //check if already correct piece
+                    if (gameObject.name.Contains("WallStraight") && gameObject.transform.eulerAngles.y == 180)
+                    {
+                        print("Correct Piece");
+                        return;
+                    }
+                    else
+                    {
+                        //place new object
+                        //rotate new object
+                        GameObject.Instantiate(wallPrefabs[1], gameObject.transform.position, Quaternion.Euler(0, 180, 0));
+
+                        //delete old object
+                        Destroy(gameObject, 0);
+                        //destroy script
+                        Destroy(this, 0);
+                    }
+
+                }
+            }
+
+
+            #endregion
         }
 
 
