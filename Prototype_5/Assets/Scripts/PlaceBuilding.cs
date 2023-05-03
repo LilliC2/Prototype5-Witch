@@ -21,8 +21,11 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
 
     bool isRotating;
     bool isValidPos;
+    string tag;
     Vector3 goalRotation;
     public Collider[] inRange;
+
+    Tweener tweener;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +46,8 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
 
         if(isBuildingHeld)
         {
+            TagSwitch();
+            print(tag);
             crossHair.SetActive(true);  
 
             MoveBuilding();
@@ -68,10 +73,15 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
                 
 
 
-                //place building
-                heldBuidling = Instantiate(buildingPrefabs[buildingPrefabIndex],houseTilePos,Quaternion.Euler(goalRotation));
+                //place building change below to 1.5f later when juiced
+                heldBuidling = Instantiate(buildingPrefabs[buildingPrefabIndex],new Vector3(houseTilePos.x, 1.5f, houseTilePos.z),Quaternion.Euler(goalRotation));
+                heldBuidling.tag = "HeldBuilding";
+                if(tweener != null) tweener.Kill();
+                tweener = heldBuidling.transform.DOMoveY(1, 0.5f).SetEase(Ease.InBack).OnComplete(() => ResetTag()); //.OnComplete(() => //instaniate particle here);
+                
 
-                heldBuidling = null;
+
+                
             }
 
             //cancel
@@ -93,6 +103,32 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
 
     }
 
+    void ResetTag()
+    {
+        heldBuidling.tag = tag;
+        heldBuidling = null;
+    }
+
+    void TagSwitch()
+    {
+        switch(buildingPrefabIndex)
+        {
+            case 0:
+                tag = "Building";
+                break;
+            case 1:
+                tag = "Wall";
+                break;
+            case 2:
+                tag = "Building";
+                break;
+            case 3:
+                tag = "Road";
+                break;
+
+        }
+    }
+
     void ResetRotation()
     {
         isRotating = false;
@@ -104,7 +140,7 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
         Vector3 newMousePos = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 10));
         Vector3 housePos = new Vector3(newMousePos.x, 1, newMousePos.z);
         var tpos = buildingTileMap.WorldToCell(housePos);
-        houseTilePos = new Vector3(tpos.x, 1, tpos.y);
+        houseTilePos = new Vector3(tpos.x, 1f, tpos.y);
 
         crossHair.transform.position = houseTilePos;
         
