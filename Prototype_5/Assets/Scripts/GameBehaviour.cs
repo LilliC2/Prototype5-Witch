@@ -11,6 +11,7 @@ public class GameBehaviour : LC.Behaviour //inherits from
     protected static CurrencyManager _CM { get { return CurrencyManager.Instance; } }
     protected static LightManager _LM { get { return LightManager.Instance; } }
     protected static EventManager _EM { get { return EventManager.Instance; } }
+    protected static CrosshairCollision _CC { get { return CrosshairCollision.Instance; } }
 
 
     public enum Gamestate { Title, Pause, Instructions, Playing, GameOver }

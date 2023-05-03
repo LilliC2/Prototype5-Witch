@@ -16,12 +16,13 @@ public class BuildingManager : GameBehaviour<BuildingManager>
         public int moneyPerDay;
         public int manaPerDay;
         public bool isTouching;
-        
+
         public virtual void AddProfitEvent()
         {
             print("Add todays profit");
-            _CM.moneyCount =+ moneyPerDay;
-            _CM.manaCount =+ manaPerDay;
+            _CM.moneyCount += moneyPerDay;
+            _CM.manaCount += manaPerDay;
+            print("Money: " + _CM.moneyCount);
         }
         //add cost to build later
 
@@ -59,11 +60,7 @@ public class BuildingManager : GameBehaviour<BuildingManager>
     {
         
         
-        BasicManaHouse = new Building();
-        BasicManaHouse.buildingName = "Basic Mana House";
-        BasicManaHouse.ID = 2;
-        BasicManaHouse.description = "A small factory that produces a bit of mana.";
-        BasicManaHouse.moneyPerDay = 0;
-        BasicManaHouse.manaPerDay = 5;
+        
+        
     }
 }

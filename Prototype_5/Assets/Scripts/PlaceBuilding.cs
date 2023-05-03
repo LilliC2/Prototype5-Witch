@@ -18,6 +18,8 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
     string tag;
     public GameObject crossHair;
 
+    bool isValidPos;
+
     public Collider[] inRange;
     // Start is called before the first frame update
     void Start()
@@ -39,44 +41,35 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
 
         if(isBuildingHeld)
         {
-            crossHair.SetActive(true);
-            if(!isInstantiatedBuilding)
-            {
-                //needs to be only done once
-                heldBuidling = Instantiate(buildingPrefabs[buildingPrefabIndex]);
-                if (heldBuidling.name.Contains("Wall")) tag = "Wall";
-                if (heldBuidling.name.Contains("Road")) tag = "Road";
-                heldBuidling.tag = "HeldBuilding";
-                isInstantiatedBuilding = true;
-                
-            }
-            
-            
+            crossHair.SetActive(true);  
 
-            MoveBuilding(heldBuidling);
+            MoveBuilding();
 
             if(Input.GetKeyDown(KeyCode.R))
             {
                 
-                heldBuidling.transform.eulerAngles = new Vector3(0,0,0);
+                //heldBuidling.transform.eulerAngles = new Vector3(0,0,0);
             }
 
 
             //place it down
-            if(Input.GetMouseButtonDown(0))
+            if(Input.GetMouseButtonDown(0) && isValidPos)
             {
                 //remove costs
                 isBuildingHeld = false;
                 isInstantiatedBuilding=false;
-                //print(tag); 
-                heldBuidling.tag = tag;
+                
+
+                //place building
+                heldBuidling = Instantiate(buildingPrefabs[buildingPrefabIndex],houseTilePos,Quaternion.identity);
+
                 heldBuidling = null;
             }
 
             //cancel
             if (Input.GetMouseButtonDown(1))
             {
-                Destroy(heldBuidling);
+                crossHair.SetActive(false);
                 isBuildingHeld = false;
                 isInstantiatedBuilding = false;
                 
@@ -92,7 +85,7 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
 
     }
 
-    void MoveBuilding(GameObject _buildingSelected)
+    void MoveBuilding()
     {
         Vector3 mousePos = Input.mousePosition;
         Vector3 newMousePos = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 10));
@@ -100,37 +93,24 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
         var tpos = buildingTileMap.WorldToCell(housePos);
         houseTilePos = new Vector3(tpos.x, 1, tpos.y);
 
-        if(CheckCollision())
-        {
-            print("Collided");
-        }
-
-
-        _buildingSelected.transform.position = houseTilePos;
         crossHair.transform.position = houseTilePos;
-
-    }
-
-    bool CheckCollision()
-    {
-        bool isCollision = false;
-
-        switch(buildingPrefabIndex)
+        
+        if (_CC.isTouching)
         {
-            case 0:
 
-                isCollision = heldBuidling.GetComponent<BasicHouse>().isTouching;
+            isValidPos = false;
 
-                break;
-            case 1:
-                isCollision = heldBuidling.GetComponent<ConnectingBuildingCheck>().isTouching;
-                break;
-            case 3:
-                isCollision = heldBuidling.GetComponent<ConnectingRoadCheck>().isTouching;
-                break;
+        }
+        else
+        {
+            isValidPos = true;
         }
 
-        return isCollision;
+
+        
+        
+
     }
+
 
 }

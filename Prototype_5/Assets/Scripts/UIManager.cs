@@ -10,30 +10,41 @@ public class UIManager : GameBehaviour<UIManager>
     public TMP_Text moneyCountText;
     public TMP_Text dayCounterText;
 
-    void OnEnable()
-    {
-        EventManager.EndofDay += UpdateDay;
-    }
+    public GameObject buildingPanel;
+    public GameObject wallsNroadsPanel;
 
-    void OnDisable()
+    public enum Panels { Buildings, WallsRoads,}
+    public Panels panels;
+
+    void OnEnable()
     {
         EventManager.EndofDay += UpdateDay;
         EventManager.EndofDay += UpdateMoney;
     }
 
-
-    // Start is called before the first frame update
-    void Start()
+    void OnDisable()
     {
-        
+        EventManager.EndofDay -= UpdateDay;
+        EventManager.EndofDay -= UpdateMoney;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        
-    }
+        switch(panels)
+        {
+            case Panels.Buildings:
+                buildingPanel.SetActive(true);
+                wallsNroadsPanel.SetActive(false);
+                break;
 
+            case Panels.WallsRoads:
+                buildingPanel.SetActive(false);
+                wallsNroadsPanel.SetActive(true);
+                break;
+        }
+    }
+    #region placeBuildings
     public void PlaceBuilding0()
     {
         _PB.isBuildingHeld = true;
@@ -55,17 +66,33 @@ public class UIManager : GameBehaviour<UIManager>
         _PB.isBuildingHeld = true;
         _PB.buildingPrefabIndex = 3;
     }
-
+    #endregion
     public void UpdateDay()
     {
         //late use do tween here
         dayCounterText.text = "Day " + _LM.dayCount;
     }
+    IEnumerator WaitToUpdateManaMoney()
+    {
+        yield return new WaitForEndOfFrame();
+        manaCountText.text = "Mana: " + _CM.manaCount;
+        moneyCountText.text = "Money: " + _CM.moneyCount;
+        
+    }
+
+    public void OpenBuildingPanel()
+    {
+        panels = Panels.Buildings;
+    }
+    public void OpenWallsNRoadPanel()
+    {
+        panels = Panels.WallsRoads;
+    }
+
     public void UpdateMoney()
     {
         //late use do tween here
-        manaCountText.text = "Mana: " + _CM.manaCount;
-        moneyCountText.text = "Money: " + _CM.moneyCount;
+        StartCoroutine(WaitToUpdateManaMoney());
     }
 
     public void UpdateDayTimeMultipler(int _switch)

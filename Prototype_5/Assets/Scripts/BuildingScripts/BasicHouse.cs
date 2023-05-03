@@ -26,21 +26,6 @@ public class BasicHouse : BuildingManager.Building
         print("My Name is " + buildingName);
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.layer == 3)
-        {
-            isTouching = true;
-        }
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.layer == 3)
-        {
-            isTouching = false;
-        }
-    }
 
 
 

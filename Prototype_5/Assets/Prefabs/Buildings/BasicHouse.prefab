@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3369834773374578080}
-  - component: {fileID: 2242876835130419158}
   - component: {fileID: 6267056487723957537}
   - component: {fileID: -4459375597693875714}
+  - component: {fileID: 6766641932789739911}
   m_Layer: 3
   m_Name: BasicHouse
   m_TagString: Building
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3369834773374578081}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.5, y: 0, z: -0.70000005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -35,23 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2242876835130419158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3369834773374578081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10d00a5908562ba47b825a22e1dfe0b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wallPrefabs:
-  - {fileID: 7455058873121663879, guid: bb6902c1f1b943d47b829315d23d8138, type: 3}
-  - {fileID: 3369834773374578081}
-  - {fileID: 7764918052108277222, guid: 9e4270b55fcdde54e80c51ef48df8f38, type: 3}
-  isTouching: 0
 --- !u!65 &6267056487723957537
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -80,7 +63,25 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &6766641932789739911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3369834773374578081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a6ab3a9758ca24c88c69c1e2bc40fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingName: 
+  description: 
+  ID: 0
+  moneyPerDay: 0
+  manaPerDay: 0
+  isTouching: 0
 --- !u!1001 &7192272911753717878
 PrefabInstance:
   m_ObjectHideFlags: 0

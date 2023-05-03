@@ -22,6 +22,8 @@ public class LightManager : GameBehaviour<LightManager>
     /// </summary>
     private void Start()
     {
+        TimeMultiplier = 30;
+
         if (ControlLights)
         {
             Light[] lights = FindObjectsOfType<Light>();
