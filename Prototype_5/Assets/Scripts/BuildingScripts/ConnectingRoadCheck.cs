@@ -11,6 +11,11 @@ public class ConnectingRoadCheck : GameBehaviour
     bool up;
     bool down;
 
+    Collider mainCollider;
+
+    
+
+
     public bool isTouching;
 
     RaycastHit upHit;
@@ -78,7 +83,7 @@ public class ConnectingRoadCheck : GameBehaviour
                 //check if already correct piece
                 if (gameObject.name.Contains("RoadCorner") && gameObject.transform.eulerAngles.y == 0)
                 {
-                    print("Correct Piece");
+                    print("Correct Piece"); 
                     return;
                 }
                 else

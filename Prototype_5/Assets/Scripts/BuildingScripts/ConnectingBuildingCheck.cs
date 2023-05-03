@@ -12,6 +12,11 @@ public class ConnectingBuildingCheck : GameBehaviour
     bool up;
     bool down;
 
+    public BoxCollider upCollider;
+    BoxCollider downCollider;
+    BoxCollider leftCollider;
+    BoxCollider rightCollider;
+
     public bool isTouching;
     RaycastHit upHit;
     RaycastHit downHit;
@@ -20,7 +25,10 @@ public class ConnectingBuildingCheck : GameBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        upCollider = gameObject.transform.Find("DirectionalColliderUp").GetComponentInChildren<BoxCollider>();
+        downCollider = gameObject.transform.Find("DirectionalColliderDown").GetComponentInChildren<BoxCollider>();
+        leftCollider = gameObject.transform.Find("DirectionalColliderLeft").GetComponentInChildren<BoxCollider>();
+        rightCollider = gameObject.transform.Find("DirectionalColliderRight").GetComponentInChildren<BoxCollider>();
     }
 
     // Update is called once per frame
@@ -44,6 +52,8 @@ public class ConnectingBuildingCheck : GameBehaviour
 
         if(_PB.heldBuidling != gameObject)
         {
+
+                
             //check +z and -z
             if (Physics.Raycast(this.transform.position, Vector3.right, out rightHit, 1f))
             {
@@ -72,7 +82,7 @@ public class ConnectingBuildingCheck : GameBehaviour
                 {
                     //print("hit object up");
                     up = true;
-                    
+
                 }
                 else up = false;
             }
@@ -86,6 +96,17 @@ public class ConnectingBuildingCheck : GameBehaviour
                 }
                 else down = false;
             }
+
+
+
+
+
+            #region corner
+
+
+
+
+            #endregion
 
 
             //switch to corner piece
@@ -197,9 +218,9 @@ public class ConnectingBuildingCheck : GameBehaviour
             //switch internal corner piece
             #region internal corner piece WIP
 
-            if(left && down)
+            if (left && down)
             {
-                
+
             }
 
             #endregion
@@ -250,8 +271,8 @@ public class ConnectingBuildingCheck : GameBehaviour
 
                 }
             }
-            
-            if(down)
+
+            if (down)
             {
                 if (downHit.collider.name.Contains("WallCorner") && downHit.collider.transform.eulerAngles.y == 180)
                 {
@@ -297,7 +318,7 @@ public class ConnectingBuildingCheck : GameBehaviour
                 }
             }
 
-            if(left)
+            if (left)
             {
                 if (leftHit.collider.name.Contains("WallCorner") && leftHit.collider.transform.eulerAngles.y == 270)
                 {
@@ -343,7 +364,7 @@ public class ConnectingBuildingCheck : GameBehaviour
                 }
             }
 
-            if(right)
+            if (right)
             {
                 if (rightHit.collider.name.Contains("WallCorner") && rightHit.collider.transform.eulerAngles.y == 90)
                 {
@@ -393,9 +414,9 @@ public class ConnectingBuildingCheck : GameBehaviour
 
             //match walls next to you
             #region match adjacent walls
-            if(down && !up && !right && !left)
+            if (down && !up && !right && !left)
             {
-                if(downHit.collider.name.Contains("Straight") && downHit.collider.transform.eulerAngles.y != gameObject.transform.eulerAngles.y)
+                if (downHit.collider.name.Contains("Straight") && downHit.collider.transform.eulerAngles.y != gameObject.transform.eulerAngles.y)
                 {
                     //place new object
                     //rotate new object
@@ -407,7 +428,7 @@ public class ConnectingBuildingCheck : GameBehaviour
                     Destroy(this, 0);
                 }
             }
-            if(up && !down && !right && !left)
+            if (up && !down && !right && !left)
             {
                 if (upHit.collider.name.Contains("Straight") && upHit.collider.transform.eulerAngles.y != gameObject.transform.eulerAngles.y)
                 {
@@ -421,7 +442,7 @@ public class ConnectingBuildingCheck : GameBehaviour
                     Destroy(this, 0);
                 }
             }
-            if(left && !down && !up && !left)
+            if (left && !down && !up && !left)
             {
                 if (leftHit.collider.name.Contains("Straight") && leftHit.collider.transform.eulerAngles.y != gameObject.transform.eulerAngles.y)
                 {
@@ -435,7 +456,7 @@ public class ConnectingBuildingCheck : GameBehaviour
                     Destroy(this, 0);
                 }
             }
-            if(right && !left && !up && !down )
+            if (right && !left && !up && !down)
             {
                 if (rightHit.collider.name.Contains("Straight") && rightHit.collider.transform.eulerAngles.y != gameObject.transform.eulerAngles.y)
                 {
@@ -453,23 +474,16 @@ public class ConnectingBuildingCheck : GameBehaviour
         }
 
 
-        //check +x and -x
 
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.layer == 3)
-        {
-            isTouching = true;
-        }
+       
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.layer == 3)
-        {
-            isTouching = false;
-        }
+        
     }
 }
