@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using DG.Tweening;
+
 
 public class PlaceBuilding : GameBehaviour<PlaceBuilding>
 {
@@ -15,11 +17,11 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
     public int buildingPrefabIndex;
     bool isInstantiatedBuilding;
     public GameObject heldBuidling;
-    string tag;
     public GameObject crossHair;
 
+    bool isRotating;
     bool isValidPos;
-
+    Vector3 goalRotation;
     public Collider[] inRange;
     // Start is called before the first frame update
     void Start()
@@ -45,13 +47,18 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
 
             MoveBuilding();
 
-            if(Input.GetKeyDown(KeyCode.R))
+            if (Input.GetKeyDown(KeyCode.R))
             {
+                if(!isRotating)
+                {
+                    isRotating = true;
+                    goalRotation = crossHair.transform.eulerAngles + new Vector3(0, 90, 0);
+                    crossHair.transform.DORotate(goalRotation, 0.5f);
+                    ExecuteAfterSeconds(0.5f, () => ResetRotation());
+                }
                 
-                //heldBuidling.transform.eulerAngles = new Vector3(0,0,0);
+
             }
-
-
             //place it down
             if(Input.GetMouseButtonDown(0) && isValidPos)
             {
@@ -60,8 +67,9 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
                 isInstantiatedBuilding=false;
                 
 
+
                 //place building
-                heldBuidling = Instantiate(buildingPrefabs[buildingPrefabIndex],houseTilePos,Quaternion.identity);
+                heldBuidling = Instantiate(buildingPrefabs[buildingPrefabIndex],houseTilePos,Quaternion.Euler(goalRotation));
 
                 heldBuidling = null;
             }
@@ -83,6 +91,11 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
         //check if there is something in the targetted spot using raycast
        
 
+    }
+
+    void ResetRotation()
+    {
+        isRotating = false;
     }
 
     void MoveBuilding()

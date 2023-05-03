@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1618843453965534329}
-  - component: {fileID: 2851635965203811855}
   - component: {fileID: 7947245855441081592}
   - component: {fileID: -9087094830693841164}
+  - component: {fileID: -2984557766649461646}
   m_Layer: 3
   m_Name: ManaHouse
   m_TagString: Building
@@ -35,23 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2851635965203811855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1618843453965534328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10d00a5908562ba47b825a22e1dfe0b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wallPrefabs:
-  - {fileID: 7455058873121663879, guid: bb6902c1f1b943d47b829315d23d8138, type: 3}
-  - {fileID: 1618843453965534328}
-  - {fileID: 7764918052108277222, guid: 9e4270b55fcdde54e80c51ef48df8f38, type: 3}
-  isTouching: 0
 --- !u!65 &7947245855441081592
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63,7 +46,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.7, y: 1, z: 0.7}
   m_Center: {x: 0, y: 0.45, z: 0}
 --- !u!54 &-9087094830693841164
 Rigidbody:
@@ -81,6 +64,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &-2984557766649461646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618843453965534328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1edeb2974fc036b4ca3398c15749ab77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingName: 
+  description: 
+  ID: 0
+  moneyPerDay: 0
+  manaPerDay: 0
+  isTouching: 0
 --- !u!1001 &3421035268894015781
 PrefabInstance:
   m_ObjectHideFlags: 0

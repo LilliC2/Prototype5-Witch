@@ -22,6 +22,7 @@ public class BasicManaHouse : BuildingManager.Building
         description = "A small factory that produces a bit of mana.";
         moneyPerDay = 0;
         manaPerDay = 5;
+        print("My Name is " + buildingName);
     }
 
     // Update is called once per frame
