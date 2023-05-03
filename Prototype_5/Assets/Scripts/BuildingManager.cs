@@ -15,7 +15,7 @@ public class BuildingManager : GameBehaviour<BuildingManager>
         public int ID;
         public int moneyPerDay;
         public int manaPerDay;
-
+        public bool isTouching;
         
         public virtual void AddProfitEvent()
         {
@@ -57,12 +57,7 @@ public class BuildingManager : GameBehaviour<BuildingManager>
 
     void SetBuildingClasses()
     {
-        BasicHouse = new Building();
-        BasicHouse.buildingName = "Basic House";
-        BasicHouse.ID = 0;
-        BasicHouse.description = "A small starter home.";
-        BasicHouse.moneyPerDay = 5;
-        BasicHouse.manaPerDay = 0;
+        
         
         BasicManaHouse = new Building();
         BasicManaHouse.buildingName = "Basic Mana House";

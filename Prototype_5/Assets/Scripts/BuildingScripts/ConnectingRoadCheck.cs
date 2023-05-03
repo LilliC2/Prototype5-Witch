@@ -11,6 +11,8 @@ public class ConnectingRoadCheck : GameBehaviour
     bool up;
     bool down;
 
+    public bool isTouching;
+
     RaycastHit upHit;
     RaycastHit downHit;
     RaycastHit leftHit;
@@ -326,5 +328,28 @@ public class ConnectingRoadCheck : GameBehaviour
             #endregion
         }
 
+    }
+
+
+    public bool CheckTouch()
+    {
+        return isTouching;
+
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.layer == 3)
+        {
+            isTouching = true;
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.layer == 3)
+        {
+            isTouching = false;
+        }
     }
 }

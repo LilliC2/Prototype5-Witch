@@ -12,6 +12,7 @@ public class ConnectingBuildingCheck : GameBehaviour
     bool up;
     bool down;
 
+    public bool isTouching;
     RaycastHit upHit;
     RaycastHit downHit;
     RaycastHit leftHit;
@@ -48,7 +49,7 @@ public class ConnectingBuildingCheck : GameBehaviour
             {
                 if (rightHit.collider.CompareTag("Wall"))
                 {
-                    print("hit object right");
+                    //print("hit object right");
                     right = true;
                 }
                 else right = false;
@@ -59,7 +60,7 @@ public class ConnectingBuildingCheck : GameBehaviour
             {
                 if (leftHit.collider.CompareTag("Wall"))
                 {
-                    print("hit object left");
+                    //print("hit object left");
                     left = true;
                 }
                 else left = false;
@@ -69,7 +70,7 @@ public class ConnectingBuildingCheck : GameBehaviour
 
                 if (upHit.collider.CompareTag("Wall"))
                 {
-                    print("hit object up");
+                    //print("hit object up");
                     up = true;
                     
                 }
@@ -80,7 +81,7 @@ public class ConnectingBuildingCheck : GameBehaviour
 
                 if (downHit.collider.CompareTag("Wall"))
                 {
-                    print("hit object down");
+                    //print("hit object down");
                     down = true;
                 }
                 else down = false;
@@ -212,7 +213,7 @@ public class ConnectingBuildingCheck : GameBehaviour
                     //check if already correct piece
                     if (gameObject.name.Contains("WallStraight") && gameObject.transform.eulerAngles.y == 270)
                     {
-                        print("Correct Piece");
+                        //print("Correct Piece");
                         return;
                     }
                     else
@@ -257,7 +258,7 @@ public class ConnectingBuildingCheck : GameBehaviour
                     //check if already correct piece
                     if (gameObject.name.Contains("WallStraight") && gameObject.transform.eulerAngles.y == 90)
                     {
-                        print("Correct Piece");
+                        //print("Correct Piece");
                         return;
                     }
                     else
@@ -278,7 +279,7 @@ public class ConnectingBuildingCheck : GameBehaviour
                     //check if already correct piece
                     if (gameObject.name.Contains("WallStraight") && gameObject.transform.eulerAngles.y == 270)
                     {
-                        print("Correct Piece");
+                        //print("Correct Piece");
                         return;
                     }
                     else
@@ -454,5 +455,21 @@ public class ConnectingBuildingCheck : GameBehaviour
 
         //check +x and -x
 
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.layer == 3)
+        {
+            isTouching = true;
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.layer == 3)
+        {
+            isTouching = false;
+        }
     }
 }

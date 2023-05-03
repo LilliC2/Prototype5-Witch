@@ -18,6 +18,7 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
     string tag;
     public GameObject crossHair;
 
+    public Collider[] inRange;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,13 +55,20 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
 
             MoveBuilding(heldBuidling);
 
+            if(Input.GetKeyDown(KeyCode.R))
+            {
+                
+                heldBuidling.transform.eulerAngles = new Vector3(0,0,0);
+            }
+
+
             //place it down
             if(Input.GetMouseButtonDown(0))
             {
                 //remove costs
                 isBuildingHeld = false;
                 isInstantiatedBuilding=false;
-                print(tag);
+                //print(tag); 
                 heldBuidling.tag = tag;
                 heldBuidling = null;
             }
@@ -79,6 +87,8 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
         else crossHair.SetActive(false);
 
         //MoveBuilding(testCube);
+        //check if there is something in the targetted spot using raycast
+       
 
     }
 
@@ -90,12 +100,37 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
         var tpos = buildingTileMap.WorldToCell(housePos);
         houseTilePos = new Vector3(tpos.x, 1, tpos.y);
 
-        //check if there is something in the targetted spot using raycast
-        //if(Physics.Raycast)
+        if(CheckCollision())
+        {
+            print("Collided");
+        }
 
 
         _buildingSelected.transform.position = houseTilePos;
         crossHair.transform.position = houseTilePos;
 
     }
+
+    bool CheckCollision()
+    {
+        bool isCollision = false;
+
+        switch(buildingPrefabIndex)
+        {
+            case 0:
+
+                isCollision = heldBuidling.GetComponent<BasicHouse>().isTouching;
+
+                break;
+            case 1:
+                isCollision = heldBuidling.GetComponent<ConnectingBuildingCheck>().isTouching;
+                break;
+            case 3:
+                isCollision = heldBuidling.GetComponent<ConnectingRoadCheck>().isTouching;
+                break;
+        }
+
+        return isCollision;
+    }
+
 }
