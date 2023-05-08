@@ -30,10 +30,7 @@ public class Fireball : GameBehaviour
     {
         if(collision.collider.CompareTag("Land"))
         {
-            print("collide");
             //explode
-
-            
 
             body.velocity = Vector3.zero;
             body.angularVelocity = Vector3.zero;

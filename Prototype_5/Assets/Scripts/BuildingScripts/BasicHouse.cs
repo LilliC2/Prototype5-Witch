@@ -24,10 +24,34 @@ public class BasicHouse : BuildingManager.Building
         moneyPerDay = 5;
         manaPerDay = 0;
         health = 20;
-        print("My Name is " + buildingName);
     }
 
+    void Update()
+    {
+        switch (health)
+        {
+            case <= 0:
+                Destroy(this.gameObject);
+                break;
 
+            case < 5:
+                gameObject.GetComponentInChildren<Renderer>().material.color = Color.red;
+                break;
+            case < 20:
+                gameObject.GetComponentInChildren<Renderer>().material.color = Color.yellow;
+                break;
+
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("Enemy"))
+        {
+            int _dmg = collision.collider.gameObject.GetComponentInParent<Enemy>().dmg;
+            Hit(_dmg);
+        }
+    }
 
 
 }

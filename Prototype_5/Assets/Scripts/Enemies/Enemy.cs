@@ -22,6 +22,8 @@ public class Enemy : GameBehaviour
     GameObject goalStructure;
     Vector3 goal;
 
+    GameObject currentTarget;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +41,7 @@ public class Enemy : GameBehaviour
     {
         if(CheckForStructures())
         {
+            print(goalStructure);
             goalStructure = FindClosestStructure();
             goal = goalStructure.transform.position;
             agent.SetDestination(goal);
@@ -53,6 +56,7 @@ public class Enemy : GameBehaviour
                     animator.SetTrigger("TrollAttack");
                     StartCoroutine(ResetAttack());
                     hasAttacked = true;
+
 
                 }
 
@@ -79,9 +83,8 @@ public class Enemy : GameBehaviour
 
     IEnumerator ResetAttack()
     {
-        print("reset");
         
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         hasAttacked = false;
     }
 
@@ -91,8 +94,8 @@ public class Enemy : GameBehaviour
         {
             case EnemyType.Troll:
                 health = 10;
-                dmg = 5;
-                range = 1;
+                dmg = 1;
+                range = 0.5f;
     
                 break;
         }

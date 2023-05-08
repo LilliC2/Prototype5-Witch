@@ -81,11 +81,11 @@ public class UIManager : GameBehaviour<UIManager>
     public void SummonFireball()
     {
 
-        _SM.spellType = SpellManager.SpellType.Fireball;
+        
         //enough mana to summon spell
         if (_CM.manaCount >= _SM.fireball.cost)
         {
-            //_SM.SpawnFireball();
+            _SM.spellType = SpellManager.SpellType.Fireball;
         }
         else
         {

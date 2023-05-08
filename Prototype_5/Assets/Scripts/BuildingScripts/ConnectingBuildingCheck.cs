@@ -325,7 +325,6 @@ public class ConnectingBuildingCheck : GameBehaviour
                     //check if already correct piece
                     if (gameObject.name.Contains("WallStraight") && gameObject.transform.eulerAngles.y == 180)
                     {
-                        print("Correct Piece");
                         return;
                     }
                     else

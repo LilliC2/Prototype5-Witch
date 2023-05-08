@@ -8,26 +8,32 @@ public class EnemyTowerManager : GameBehaviour
     public float towerSpawnRadius = 1;
     Vector3 sphereRadiusPos;
 
-    bool isEnemiesSpaned = false;
+    bool isEnemiesSpawned = false;
+
+    int waveNumSpawn;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        waveNumSpawn = RandomIntBetweenTwoInt(2, 3);
+        print("Wave will come on day " + waveNumSpawn);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(!isEnemiesSpaned)
+        if (_LM.dayCount == waveNumSpawn && (_LM.TimeOfDay > 500 && _LM.TimeOfDay < 550)) 
         {
-            for (int i = 0; i < _EnM.enemiesToSpawn; i++)
+            if (!isEnemiesSpawned)
             {
-                _EnM.SpawnEnemies(gameObject.transform.position, towerSpawnRadius);
+                for (int i = 0; i < _EnM.enemiesToSpawn; i++)
+                {
+                    _EnM.SpawnEnemies(gameObject.transform.position, towerSpawnRadius);
+                }
+                isEnemiesSpawned = true;
             }
-            isEnemiesSpaned = true;
         }
-        
+
     }
 
 

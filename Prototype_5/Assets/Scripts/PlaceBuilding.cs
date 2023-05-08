@@ -47,7 +47,7 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
         {
             Cursor.visible = false;
             TagSwitch();
-            print(tag);
+            
             crossHair.SetActive(true);
 
             MoveBuilding();

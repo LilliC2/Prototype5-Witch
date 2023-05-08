@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BasicWall : BuildingManager.Building
 {
+    ParticleSystem explosion;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +14,6 @@ public class BasicWall : BuildingManager.Building
         moneyPerDay = 0;
         manaPerDay = 0;
         health = 40;
-        print("My Name is " + buildingName);
     }
 
     // Update is called once per frame
@@ -22,7 +22,10 @@ public class BasicWall : BuildingManager.Building
         switch(health)
         {
             case <= 0:
-                Destroy(this.gameObject);
+                gameObject.GetComponentInChildren<Renderer>().enabled = false;
+                explosion = gameObject.GetComponentInChildren<ParticleSystem>(true);
+                explosion.Play(true);
+                Destroy(this.gameObject,1);
                 break;
 
             case < 5:
