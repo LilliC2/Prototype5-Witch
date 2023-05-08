@@ -160,6 +160,14 @@ public class Enemy : GameBehaviour
 
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.collider.CompareTag("Fireball"))
+        {
+            health -= _SM.fireball.dmg;
+        }
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;

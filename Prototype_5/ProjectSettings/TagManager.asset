@@ -10,7 +10,7 @@ TagManager:
   - HeldBuilding
   - Road
   - Enemy
-  - PlayerProjectile
+  - Fireball
   layers:
   - Default
   - TransparentFX

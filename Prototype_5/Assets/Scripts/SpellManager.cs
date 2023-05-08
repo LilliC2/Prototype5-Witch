@@ -30,7 +30,7 @@ public class SpellManager : GameBehaviour<SpellManager>
         #region spellStats
 
         fireball = new Spells();
-        fireball.dmg = 10;
+        fireball.dmg = 20;
         fireball.cost = 4;
         fireball.speed = 3;
         #endregion

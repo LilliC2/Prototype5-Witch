@@ -43,7 +43,7 @@ public class Fireball : GameBehaviour
             explosion = explosionOB.GetComponentInChildren<ParticleSystem>(true);
             explosion.Play(true);
 
-            Destroy(gameObject, 5);
+            Destroy(gameObject, 3);
         }
     }
 }
