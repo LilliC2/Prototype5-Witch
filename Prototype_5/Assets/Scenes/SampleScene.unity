@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 67ba3981cad281a4f99b6db0270c1003, type: 2}
 --- !u!1 &6741534
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,11 +262,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -286,15 +286,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -311,6 +311,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -459,11 +463,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -483,15 +487,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -508,6 +512,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -786,11 +794,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -810,15 +818,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -835,6 +843,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -897,6 +909,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -1212,11 +1228,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1236,15 +1252,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1261,6 +1277,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -1345,6 +1365,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302681067}
   m_CullTransparentMesh: 1
+--- !u!1 &305631988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 305631990}
+  - component: {fileID: 305631989}
+  m_Layer: 0
+  m_Name: EnemyManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &305631989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305631988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bce57754b90bc147a7ddff34c3c6d4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroy: 0
+  EnemyList: []
+  trollPrefab: {fileID: 3231745443623089321, guid: c85158e117b351a429f539fe25965ed2, type: 3}
+  enemiesToSpawn: 5
+--- !u!4 &305631990
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305631988}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.278954, y: 1.0085155, z: -0.64524555}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &311808471
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,6 +1573,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overworld_Land_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
 --- !u!4 &344366296 stripped
@@ -1517,11 +1589,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1541,15 +1613,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1566,6 +1638,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -1734,6 +1810,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overworld_Land_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
 --- !u!4 &425659435 stripped
@@ -1881,11 +1961,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1905,15 +1985,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1930,6 +2010,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -1992,6 +2076,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -2174,14 +2262,49 @@ Transform:
   - {fileID: 725140359}
   - {fileID: 917702913}
   - {fileID: 1808050675}
+  - {fileID: 1780130686}
+  - {fileID: 692492827}
+  - {fileID: 1322417950}
+  - {fileID: 1587280021}
+  - {fileID: 1627669357}
+  - {fileID: 797515603}
+  - {fileID: 431041808}
+  - {fileID: 1289646032}
+  - {fileID: 1733632710}
+  - {fileID: 913317845}
+  - {fileID: 1815556539}
+  - {fileID: 1215064450}
+  - {fileID: 386453393}
+  - {fileID: 107712215}
+  - {fileID: 2064383625}
+  - {fileID: 2089052144}
+  - {fileID: 1861219257}
+  - {fileID: 558602958}
+  - {fileID: 2042611450}
+  - {fileID: 1669214443}
+  - {fileID: 89736779}
+  - {fileID: 1154715629}
+  - {fileID: 806701534}
+  - {fileID: 553178941}
+  - {fileID: 874424999}
+  - {fileID: 1407515330}
+  - {fileID: 1032175370}
+  - {fileID: 1077578001}
+  - {fileID: 1588016973}
+  - {fileID: 1571190054}
+  - {fileID: 1981901923}
+  - {fileID: 145937967}
+  - {fileID: 1348107031}
+  - {fileID: 544304041}
+  - {fileID: 869906061}
+  - {fileID: 285816613}
+  - {fileID: 1441052672}
+  - {fileID: 1199216704}
+  - {fileID: 1333637625}
+  - {fileID: 1555235653}
   m_Father: {fileID: 1127995685}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &457341233 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 87c55a413f44ebb4fbab355eeef3abb4, type: 3}
-  m_PrefabInstance: {fileID: 5279124857448342579}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &500029129
 GameObject:
   m_ObjectHideFlags: 0
@@ -2687,11 +2810,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 49
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2711,15 +2834,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2737,6 +2860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overworld_Land_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
 --- !u!4 &544304041 stripped
@@ -2749,11 +2876,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2773,15 +2900,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2799,6 +2926,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overworld_Land_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
 --- !u!4 &553178941 stripped
@@ -2811,11 +2942,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2835,15 +2966,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2860,6 +2991,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -3317,6 +3452,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overworld_Land_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
 --- !u!4 &668405944 stripped
@@ -3329,11 +3468,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3353,15 +3492,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3378,6 +3517,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -3607,14 +3750,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: -0.58404994, y: -0.08621955, z: 0.1013705, w: -0.80073464}
+  m_LocalRotation: {x: 0.83109045, y: 0.044426784, z: -0.12544346, w: 0.5399805}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 72.33, y: 3.715, z: -11.714}
+  m_LocalEulerAnglesHint: {x: 65.325, y: 202.615, z: -171.511}
 --- !u!1001 &725140358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3669,6 +3812,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -3816,11 +3963,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3840,15 +3987,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3865,6 +4012,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -4013,11 +4164,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4037,15 +4188,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4062,6 +4213,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -4209,11 +4364,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4233,15 +4388,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4258,6 +4413,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -4271,11 +4430,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4295,15 +4454,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4320,6 +4479,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -4467,11 +4630,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4491,15 +4654,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4516,6 +4679,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -4579,6 +4746,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overworld_Land_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
 --- !u!4 &917702913 stripped
@@ -4641,6 +4812,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overworld_Land_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
 --- !u!4 &939638191 stripped
@@ -4702,6 +4877,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -4894,9 +5073,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1665517300}
     m_Modifications:
+    - target: {fileID: 680503437627930734, guid: cba1fe512c8c89743a0345e6f150b5ff, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8664081760180841082, guid: cba1fe512c8c89743a0345e6f150b5ff, type: 3}
       propertyPath: m_Name
       value: WallStraight
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664081760180841082, guid: cba1fe512c8c89743a0345e6f150b5ff, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8664081760180841083, guid: cba1fe512c8c89743a0345e6f150b5ff, type: 3}
       propertyPath: m_RootOrder
@@ -5071,6 +5258,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overworld_Land_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
 --- !u!4 &1027192752 stripped
@@ -5083,11 +5274,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5107,15 +5298,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5132,6 +5323,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -5176,11 +5371,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5200,15 +5395,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5225,6 +5420,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -5410,46 +5609,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 454326022}
-  - {fileID: 1780130686}
-  - {fileID: 692492827}
-  - {fileID: 1322417950}
-  - {fileID: 1587280021}
-  - {fileID: 1627669357}
-  - {fileID: 797515603}
-  - {fileID: 431041808}
-  - {fileID: 1289646032}
-  - {fileID: 1733632710}
-  - {fileID: 913317845}
-  - {fileID: 1815556539}
-  - {fileID: 1215064450}
-  - {fileID: 386453393}
-  - {fileID: 107712215}
-  - {fileID: 2064383625}
-  - {fileID: 2089052144}
-  - {fileID: 1861219257}
-  - {fileID: 558602958}
-  - {fileID: 2042611450}
-  - {fileID: 1669214443}
-  - {fileID: 89736779}
-  - {fileID: 1154715629}
-  - {fileID: 806701534}
-  - {fileID: 553178941}
-  - {fileID: 874424999}
-  - {fileID: 1407515330}
-  - {fileID: 1032175370}
-  - {fileID: 1077578001}
-  - {fileID: 1588016973}
-  - {fileID: 1571190054}
-  - {fileID: 1981901923}
-  - {fileID: 145937967}
-  - {fileID: 1348107031}
-  - {fileID: 544304041}
-  - {fileID: 869906061}
-  - {fileID: 285816613}
-  - {fileID: 1441052672}
-  - {fileID: 1199216704}
-  - {fileID: 1333637625}
-  - {fileID: 1555235653}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5458,11 +5617,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5482,15 +5641,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5508,6 +5667,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overworld_Land_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
 --- !u!4 &1154715629 stripped
@@ -5520,11 +5683,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 38
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5544,15 +5707,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5570,6 +5733,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overworld_Land_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
 --- !u!4 &1199216704 stripped
@@ -5582,11 +5749,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5606,15 +5773,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5631,6 +5798,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -5771,11 +5942,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5795,15 +5966,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5820,6 +5991,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -5968,11 +6143,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5992,15 +6167,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6017,6 +6192,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -6128,11 +6307,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 39
+      value: 54
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6152,15 +6331,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6178,6 +6357,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overworld_Land_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
 --- !u!4 &1333637625 stripped
@@ -6190,11 +6373,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6214,15 +6397,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6239,6 +6422,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -6301,6 +6488,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -6482,11 +6673,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6506,15 +6697,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6532,6 +6723,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overworld_Land_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
 --- !u!4 &1407515330 stripped
@@ -6544,11 +6739,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 37
+      value: 52
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6568,15 +6763,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6593,6 +6788,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -6753,6 +6952,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overworld_Land_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
 --- !u!4 &1499388121 stripped
@@ -6814,6 +7017,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -6933,11 +7140,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 40
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6957,15 +7164,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6983,6 +7190,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overworld_Land_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
 --- !u!4 &1555235653 stripped
@@ -6995,11 +7206,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7019,15 +7230,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7045,6 +7256,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overworld_Land_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
 --- !u!4 &1571190054 stripped
@@ -7057,11 +7272,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7081,15 +7296,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7107,6 +7322,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overworld_Land_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
 --- !u!4 &1587280021 stripped
@@ -7119,11 +7338,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7143,15 +7362,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7168,6 +7387,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -7213,11 +7436,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7237,15 +7460,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7262,6 +7485,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -7776,7 +8003,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 979872869}
-  - {fileID: 5279124856804955477}
   m_Father: {fileID: 619585251}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7785,11 +8011,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7809,15 +8035,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7834,6 +8060,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -7944,11 +8174,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7968,15 +8198,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7993,6 +8223,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -8276,11 +8510,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8300,15 +8534,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8325,6 +8559,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -8388,6 +8626,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overworld_Land_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
 --- !u!4 &1808050675 stripped
@@ -8400,11 +8642,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8424,15 +8666,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8450,6 +8692,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overworld_Land_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
 --- !u!4 &1815556539 stripped
@@ -8462,11 +8708,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8486,15 +8732,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8511,6 +8757,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -8639,6 +8889,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overworld_Land_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
 --- !u!4 &1947649502 stripped
@@ -8651,11 +8905,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8675,15 +8929,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8701,6 +8955,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overworld_Land_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
 --- !u!4 &1981901923 stripped
@@ -8713,11 +8971,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8737,15 +8995,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8762,6 +9020,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -8825,6 +9087,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overworld_Land_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
 --- !u!4 &2054924050 stripped
@@ -8837,11 +9103,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8861,15 +9127,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8886,6 +9152,10 @@ PrefabInstance:
     - target: {fileID: 4321588498778274009, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_Name
       value: Overworld_Land_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
@@ -9033,11 +9303,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1127995685}
+    m_TransformParent: {fileID: 454326022}
     m_Modifications:
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9057,15 +9327,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9083,6 +9353,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Overworld_Land_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5076847845319163904, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
 --- !u!4 &2089052144 stripped
@@ -9090,200 +9364,60 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3509022620666815075, guid: b0124045ffcb7fd4e8536ed43d2458ce, type: 3}
   m_PrefabInstance: {fileID: 2089052143}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1191982703610713308 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3231745443623089321, guid: c85158e117b351a429f539fe25965ed2, type: 3}
-  m_PrefabInstance: {fileID: 4347014533664235637}
-  m_PrefabAsset: {fileID: 0}
---- !u!195 &3201723768319705540
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191982703610713308}
-  m_Enabled: 1
-  m_AgentTypeID: -1372625422
-  m_Radius: 3.4
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 9.8
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &3201723768319705541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191982703610713308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c3df698fb376ce4c83a6d07fffee185, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1001 &4347014533664235637
+--- !u!1001 &6094645630074114629
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2851526194872217107, guid: c85158e117b351a429f539fe25965ed2, type: 3}
+    - target: {fileID: 2150398447734163216, guid: ab5efbc9ce0967147a32a2a0126eeace, type: 3}
       propertyPath: m_RootOrder
       value: 13
       objectReference: {fileID: 0}
-    - target: {fileID: 2851526194872217107, guid: c85158e117b351a429f539fe25965ed2, type: 3}
+    - target: {fileID: 2150398447734163216, guid: ab5efbc9ce0967147a32a2a0126eeace, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.9771185
+      value: -11.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2851526194872217107, guid: c85158e117b351a429f539fe25965ed2, type: 3}
+    - target: {fileID: 2150398447734163216, guid: ab5efbc9ce0967147a32a2a0126eeace, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.24900001
       objectReference: {fileID: 0}
-    - target: {fileID: 2851526194872217107, guid: c85158e117b351a429f539fe25965ed2, type: 3}
+    - target: {fileID: 2150398447734163216, guid: ab5efbc9ce0967147a32a2a0126eeace, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.82337
+      value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2851526194872217107, guid: c85158e117b351a429f539fe25965ed2, type: 3}
+    - target: {fileID: 2150398447734163216, guid: ab5efbc9ce0967147a32a2a0126eeace, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2851526194872217107, guid: c85158e117b351a429f539fe25965ed2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.0000000814605
-      objectReference: {fileID: 0}
-    - target: {fileID: 2851526194872217107, guid: c85158e117b351a429f539fe25965ed2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2851526194872217107, guid: c85158e117b351a429f539fe25965ed2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2851526194872217107, guid: c85158e117b351a429f539fe25965ed2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2851526194872217107, guid: c85158e117b351a429f539fe25965ed2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2851526194872217107, guid: c85158e117b351a429f539fe25965ed2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3231745443623089321, guid: c85158e117b351a429f539fe25965ed2, type: 3}
-      propertyPath: m_Name
-      value: monster_troll_blue
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c85158e117b351a429f539fe25965ed2, type: 3}
---- !u!4 &5279124856804955477
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5279124856804955478}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.5, y: -0.751, z: 0.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 457341233}
-  m_Father: {fileID: 1665517300}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5279124856804955478
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5279124856804955477}
-  m_Layer: 0
-  m_Name: EnemyTower
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1001 &5279124857448342579
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 5279124856804955477}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 87c55a413f44ebb4fbab355eeef3abb4, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 87c55a413f44ebb4fbab355eeef3abb4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 87c55a413f44ebb4fbab355eeef3abb4, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 87c55a413f44ebb4fbab355eeef3abb4, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 87c55a413f44ebb4fbab355eeef3abb4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.143
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 87c55a413f44ebb4fbab355eeef3abb4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.731
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 87c55a413f44ebb4fbab355eeef3abb4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.009000003
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 87c55a413f44ebb4fbab355eeef3abb4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 87c55a413f44ebb4fbab355eeef3abb4, type: 3}
+    - target: {fileID: 2150398447734163216, guid: ab5efbc9ce0967147a32a2a0126eeace, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 87c55a413f44ebb4fbab355eeef3abb4, type: 3}
+    - target: {fileID: 2150398447734163216, guid: ab5efbc9ce0967147a32a2a0126eeace, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 87c55a413f44ebb4fbab355eeef3abb4, type: 3}
+    - target: {fileID: 2150398447734163216, guid: ab5efbc9ce0967147a32a2a0126eeace, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 87c55a413f44ebb4fbab355eeef3abb4, type: 3}
+    - target: {fileID: 2150398447734163216, guid: ab5efbc9ce0967147a32a2a0126eeace, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 87c55a413f44ebb4fbab355eeef3abb4, type: 3}
+    - target: {fileID: 2150398447734163216, guid: ab5efbc9ce0967147a32a2a0126eeace, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 87c55a413f44ebb4fbab355eeef3abb4, type: 3}
+    - target: {fileID: 2150398447734163216, guid: ab5efbc9ce0967147a32a2a0126eeace, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 87c55a413f44ebb4fbab355eeef3abb4, type: 3}
+    - target: {fileID: 2150398447734163219, guid: ab5efbc9ce0967147a32a2a0126eeace, type: 3}
       propertyPath: m_Name
-      value: Tower_Complex
+      value: EnemyTower
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 87c55a413f44ebb4fbab355eeef3abb4, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: ab5efbc9ce0967147a32a2a0126eeace, type: 3}
