@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1170247710794821671}
   - component: {fileID: 5503401849753126000}
   - component: {fileID: 8676157399031480117}
+  - component: {fileID: 7685403605132711443}
   m_Layer: 3
   m_Name: WallCorner
   m_TagString: Wall
@@ -82,6 +83,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7, y: 1, z: 0.7}
   m_Center: {x: 0, y: 0.45, z: 0}
+--- !u!114 &7685403605132711443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7455058873121663879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff040d7e80987be4f893c30208409cd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingName: 
+  description: 
+  ID: 0
+  moneyPerDay: 0
+  manaPerDay: 0
+  health: 0
+  isTouching: 0
 --- !u!1001 &7455058872835631633
 PrefabInstance:
   m_ObjectHideFlags: 0

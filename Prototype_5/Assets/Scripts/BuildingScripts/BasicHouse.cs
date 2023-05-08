@@ -23,6 +23,7 @@ public class BasicHouse : BuildingManager.Building
         description = "A small starter home.";
         moneyPerDay = 5;
         manaPerDay = 0;
+        health = 20;
         print("My Name is " + buildingName);
     }
 

@@ -9,6 +9,8 @@ TagManager:
   - Wall
   - HeldBuilding
   - Road
+  - Enemy
+  - PlayerProjectile
   layers:
   - Default
   - TransparentFX

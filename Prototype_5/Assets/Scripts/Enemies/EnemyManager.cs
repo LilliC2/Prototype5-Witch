@@ -21,6 +21,12 @@ public class EnemyManager : GameBehaviour<EnemyManager>
         
     }
 
+    public void DestroyEnemy(GameObject _enemy)
+    {
+        EnemyList.Remove(_enemy);
+        Destroy(_enemy);
+    }
+
     public void SpawnEnemies(Vector3 _towerPos, float _towerRadius)
     {
         Vector3 spawnPos = Random.insideUnitSphere * _towerRadius + _towerPos;

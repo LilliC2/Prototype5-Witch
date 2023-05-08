@@ -12,8 +12,10 @@ public class UIManager : GameBehaviour<UIManager>
 
     public GameObject buildingPanel;
     public GameObject wallsNroadsPanel;
+    public GameObject spellsPanel;
 
-    public enum Panels { Buildings, WallsRoads,}
+
+    public enum Panels { Buildings, WallsRoads, Spells}
     public Panels panels;
 
     void OnEnable()
@@ -36,11 +38,18 @@ public class UIManager : GameBehaviour<UIManager>
             case Panels.Buildings:
                 buildingPanel.SetActive(true);
                 wallsNroadsPanel.SetActive(false);
+                spellsPanel.SetActive(false);
                 break;
 
             case Panels.WallsRoads:
                 buildingPanel.SetActive(false);
+                spellsPanel.SetActive(false);
                 wallsNroadsPanel.SetActive(true);
+                break;
+            case Panels.Spells:
+                buildingPanel.SetActive(false);
+                wallsNroadsPanel.SetActive(false);
+                spellsPanel.SetActive(true);
                 break;
         }
     }
@@ -67,6 +76,24 @@ public class UIManager : GameBehaviour<UIManager>
         _PB.buildingPrefabIndex = 3;
     }
     #endregion
+
+    #region spells
+    public void SummonFireball()
+    {
+
+        _SM.spellType = SpellManager.SpellType.Fireball;
+        //enough mana to summon spell
+        if (_CM.manaCount >= _SM.fireball.cost)
+        {
+            //_SM.SpawnFireball();
+        }
+        else
+        {
+            print("Not enough mana");
+        }
+
+    }
+    #endregion
     public void UpdateDay()
     {
         //late use do tween here
@@ -75,9 +102,14 @@ public class UIManager : GameBehaviour<UIManager>
     IEnumerator WaitToUpdateManaMoney()
     {
         yield return new WaitForEndOfFrame();
+        UpdateManaMoney();
+        
+    }
+
+    public void UpdateManaMoney()
+    {
         manaCountText.text = "Mana: " + _CM.manaCount;
         moneyCountText.text = "Money: " + _CM.moneyCount;
-        
     }
 
     public void OpenBuildingPanel()
@@ -87,6 +119,10 @@ public class UIManager : GameBehaviour<UIManager>
     public void OpenWallsNRoadPanel()
     {
         panels = Panels.WallsRoads;
+    }
+    public void OpenSpellPanel()
+    {
+        panels = Panels.Spells;
     }
 
     public void UpdateMoney()

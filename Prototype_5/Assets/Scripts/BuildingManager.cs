@@ -15,7 +15,10 @@ public class BuildingManager : GameBehaviour<BuildingManager>
         public int ID;
         public int moneyPerDay;
         public int manaPerDay;
+        public int health;
         public bool isTouching;
+
+
 
         public virtual void AddProfitEvent()
         {
@@ -24,10 +27,17 @@ public class BuildingManager : GameBehaviour<BuildingManager>
             _CM.manaCount += manaPerDay;
             print("Money: " + _CM.moneyCount);
         }
+
+        public virtual void Hit(int _damage)
+        {
+            health -= _damage;
+        }
+
+
         //add cost to build later
 
     }
-
+            
     int todaysMoney;
     int todaysMana;
 
@@ -35,6 +45,7 @@ public class BuildingManager : GameBehaviour<BuildingManager>
 
     public Building BasicHouse;
     public Building BasicManaHouse;
+    public Building BasicWall;
 
     // Start is called before the first frame update
     void Start()
