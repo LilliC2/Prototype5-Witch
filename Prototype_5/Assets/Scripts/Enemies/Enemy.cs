@@ -94,7 +94,7 @@ public class Enemy : GameBehaviour
         {
             case EnemyType.Troll:
                 health = 10;
-                dmg = 1;
+                dmg = 5;
                 range = 0.5f;
     
                 break;
