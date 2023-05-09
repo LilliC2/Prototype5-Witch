@@ -14,6 +14,7 @@ public class GameBehaviour : LC.Behaviour //inherits from
     protected static CrosshairCollision _CC { get { return CrosshairCollision.Instance; } }
     protected static EnemyManager _EnM { get { return EnemyManager.Instance; } }
     protected static SpellManager _SM { get { return SpellManager.Instance; } }
+    protected static GameManager _GM { get { return GameManager.Instance; } }
 
 
     public enum Gamestate { Title, Pause, Instructions, Playing, GameOver }

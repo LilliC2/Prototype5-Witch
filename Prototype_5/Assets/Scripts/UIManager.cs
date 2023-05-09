@@ -133,17 +133,6 @@ public class UIManager : GameBehaviour<UIManager>
 
     public void UpdateDayTimeMultipler(int _switch)
     {
-        switch (_switch)
-        {
-            case 0:
-                _LM.TimeMultiplier = 30;
-                break;
-            case 1:
-                _LM.TimeMultiplier = 50;
-                break;
-            case 2:
-                _LM.TimeMultiplier = 100;
-                break;
-        }
+        _GM.TimeSclaeUpdater(_switch);
     }
 }

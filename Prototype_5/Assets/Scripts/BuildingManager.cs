@@ -22,10 +22,8 @@ public class BuildingManager : GameBehaviour<BuildingManager>
 
         public virtual void AddProfitEvent()
         {
-            print("Add todays profit");
             _CM.moneyCount += moneyPerDay;
             _CM.manaCount += manaPerDay;
-            print("Money: " + _CM.moneyCount);
         }
 
         public virtual void Hit(int _damage)
