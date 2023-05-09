@@ -9,12 +9,14 @@ public class UIManager : GameBehaviour<UIManager>
     public TMP_Text manaCountText;
     public TMP_Text moneyCountText;
     public TMP_Text dayCounterText;
+    public TMP_Text pauseSpeedText;
 
     public GameObject buildingPanel;
     public GameObject wallsNroadsPanel;
     public GameObject spellsPanel;
 
-
+    int prevSpeed;
+    bool pause;
     public enum Panels { Buildings, WallsRoads, Spells}
     public Panels panels;
 
@@ -133,6 +135,22 @@ public class UIManager : GameBehaviour<UIManager>
 
     public void UpdateDayTimeMultipler(int _switch)
     {
+        if(_switch == 0)
+        {
+            pause = !pause;
+            if (!pause)
+            {
+                pauseSpeedText.text = "Pause";
+            }
+            else
+            {
+                pauseSpeedText.text = "Play";
+                if(prevSpeed == 0) prevSpeed = 1;
+                _switch = prevSpeed;
+            }
+        }
+
+
         _GM.TimeSclaeUpdater(_switch);
     }
 }

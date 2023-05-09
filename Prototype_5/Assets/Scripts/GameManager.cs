@@ -21,12 +21,15 @@ public class GameManager : GameBehaviour<GameManager>
         switch (_switch)
         {
             case 0:
-                Time.timeScale = 1;
+                Time.timeScale = 0;
                 break;
             case 1:
-                Time.timeScale = 2;
+                Time.timeScale = 1;
                 break;
             case 2:
+                Time.timeScale = 2;
+                break;
+            case 3:
                 Time.timeScale = 3;
                 break;
         }
