@@ -24,6 +24,7 @@ public class BasicHouse : BuildingManager.Building
         moneyPerDay = 5;
         manaPerDay = 0;
         health = 20;
+        //print("House pos is " + gameObject.transform.position);
     }
 
     void Update()

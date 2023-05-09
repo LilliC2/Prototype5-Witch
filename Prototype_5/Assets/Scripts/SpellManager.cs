@@ -6,7 +6,7 @@ using static Enemy;
 public class SpellManager : GameBehaviour<SpellManager>
 {
 
-    public class Spells : GameBehaviour
+    public class Spells : MonoBehaviour
     {
         public int dmg;
         public int speed;

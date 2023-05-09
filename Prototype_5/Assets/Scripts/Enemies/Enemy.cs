@@ -16,13 +16,20 @@ public class Enemy : GameBehaviour
 
     Vector3 spawn;
 
+    bool findNewStructure;
+
     public enum EnemyType { Troll}
     public EnemyType enemyType;
 
-    GameObject goalStructure;
-    Vector3 goal;
+    public GameObject goalStructure;
+    public Vector3 goal;
+    Vector3 goalParent;
+
+    public GameObject prevStrucutre;
 
     GameObject currentTarget;
+
+    public Collider[] colliders;
 
     // Start is called before the first frame update
     void Start()
@@ -39,28 +46,55 @@ public class Enemy : GameBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(CheckForStructures())
+        if (CheckForStructures())
         {
-            print(goalStructure);
-            goalStructure = FindClosestStructure();
-            goal = goalStructure.transform.position;
-            agent.SetDestination(goal);
 
-            gameObject.transform.LookAt(goalStructure.transform.position);
+
+            if(goalStructure != prevStrucutre)
+            {
+                findNewStructure = false;
+                StartCoroutine(ResetPathFinding());
+                
+                prevStrucutre = goalStructure;
+                
+            }
+            else if (prevStrucutre == null)
+            {
+                prevStrucutre = goalStructure;
+                agent.SetDestination(FindClosestStructure().transform.position);
+                goalStructure = FindClosestStructure();
+
+            }
+
+
+
             if (Vector3.Distance(gameObject.transform.position, goal) < range)
             {
+                print("In range to attack");
                 //stop
-                agent.SetDestination(gameObject.transform.position);
-                if (!hasAttacked)
+                if (!hasAttacked    )
                 {
                     animator.SetTrigger("TrollAttack");
                     StartCoroutine(ResetAttack());
                     hasAttacked = true;
-
+                }
+            }
+            else
+            {
+                if (findNewStructure)
+                {
+                    print("looking for new target");
+                    goalStructure = FindClosestStructure();
+                    agent.SetDestination(FindClosestStructure().transform.position);
+                    goalStructure = FindClosestStructure();
 
                 }
 
             }
+
+ 
+
+
         }
         else
         {
@@ -71,9 +105,9 @@ public class Enemy : GameBehaviour
                 _EnM.DestroyEnemy(gameObject);
             }
         }
-        
 
-        
+
+
         if (health <= 0)
         {
             _EnM.DestroyEnemy(gameObject);
@@ -87,6 +121,12 @@ public class Enemy : GameBehaviour
         yield return new WaitForSeconds(4);
         hasAttacked = false;
     }
+    IEnumerator ResetPathFinding()
+    {
+        print("WAIT");
+        yield return new WaitForSeconds(4);
+        findNewStructure = true;
+    }
 
     void SwitchBasedOnType()
     {
@@ -95,7 +135,7 @@ public class Enemy : GameBehaviour
             case EnemyType.Troll:
                 health = 10;
                 dmg = 5;
-                range = 0.5f;
+                range = 0.2f;
     
                 break;
         }
@@ -129,7 +169,7 @@ public class Enemy : GameBehaviour
         foreach(GameObject go in walls)
         {
             float currentDistance;
-            currentDistance = Vector3.Distance(transform.position, go.transform.position);
+            currentDistance = Vector3.Distance(transform.position, go.transform.localPosition);
             if(currentDistance < closestWallDistance)
             {
                 closestWallDistance = currentDistance;
@@ -138,19 +178,19 @@ public class Enemy : GameBehaviour
             }
         }
         
-        foreach(GameObject go in building)
+        foreach(GameObject go2 in building)
         {
             float currentDistance;
-            currentDistance = Vector3.Distance(transform.position, go.transform.position);
+            currentDistance = Vector3.Distance(transform.position, go2.transform.localPosition);
             if(currentDistance < closestBuildingDistance)
             {
                 closestBuildingDistance = currentDistance;
-                closestBuilding = go;
+                closestBuilding = go2;
                 
             }
         }
 
-        if(closestBuildingDistance<closestWallDistance)
+        if(closestBuildingDistance < closestWallDistance)
         {
             closestStructure = closestBuilding;
         }
@@ -158,6 +198,7 @@ public class Enemy : GameBehaviour
         {
             closestStructure = closestWall;
         }
+
 
         return closestStructure;
 
@@ -175,5 +216,8 @@ public class Enemy : GameBehaviour
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(gameObject.transform.position, range);
+        
+
+
     }
 }

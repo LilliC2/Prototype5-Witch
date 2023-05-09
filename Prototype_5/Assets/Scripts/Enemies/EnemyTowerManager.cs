@@ -34,6 +34,14 @@ public class EnemyTowerManager : GameBehaviour
             }
         }
 
+        //DEBUG
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            for (int i = 0; i < _EnM.enemiesToSpawn; i++)
+            {
+                _EnM.SpawnEnemies(gameObject.transform.position, towerSpawnRadius);
+            }
+        }
     }
 
 
