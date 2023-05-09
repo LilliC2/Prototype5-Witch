@@ -140,17 +140,23 @@ public class UIManager : GameBehaviour<UIManager>
             pause = !pause;
             if (!pause)
             {
-                pauseSpeedText.text = "Pause";
+                pauseSpeedText.text = "Play";
+                if (prevSpeed == 0) prevSpeed = 1;
+                _switch = prevSpeed;
             }
             else
             {
-                pauseSpeedText.text = "Play";
-                if(prevSpeed == 0) prevSpeed = 1;
-                _switch = prevSpeed;
+                pauseSpeedText.text = "Pause";
+                
             }
         }
 
 
         _GM.TimeSclaeUpdater(_switch);
+    }
+
+    void UpdateToolTip()
+    {
+
     }
 }

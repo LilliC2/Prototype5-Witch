@@ -17,6 +17,7 @@ public class CameraController : GameBehaviour
     }
     void Update()
     {
+        Time.fixedDeltaTime = 1;
         
         FOV += Input.GetAxis("Mouse ScrollWheel") * senesitivity ;
         FOV = Mathf.Clamp(FOV, minFOV, maxFOV);
