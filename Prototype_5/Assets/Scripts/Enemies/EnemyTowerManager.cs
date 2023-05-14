@@ -15,7 +15,7 @@ public class EnemyTowerManager : GameBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        waveNumSpawn = RandomIntBetweenTwoInt(2, 3);
+        waveNumSpawn = RandomIntBetweenTwoInt(5, 6);
         print("Wave will come on day " + waveNumSpawn);
     }
 

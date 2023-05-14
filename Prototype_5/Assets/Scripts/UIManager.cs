@@ -14,7 +14,9 @@ public class UIManager : GameBehaviour<UIManager>
     public GameObject buildingPanel;
     public GameObject wallsNroadsPanel;
     public GameObject spellsPanel;
+    public GameObject controlsPanel;
 
+    bool controls;
     int prevSpeed;
     bool pause;
     public enum Panels { Buildings, WallsRoads, Spells}
@@ -159,4 +161,13 @@ public class UIManager : GameBehaviour<UIManager>
     {
 
     }
+
+    public void OpenControls()
+    {
+        controls = !controls;
+
+        controlsPanel.SetActive(controls);
+
+    }
+   
 }
