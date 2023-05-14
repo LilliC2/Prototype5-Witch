@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.XR;
 
 public class UIManager : GameBehaviour<UIManager>
 {
@@ -15,10 +16,12 @@ public class UIManager : GameBehaviour<UIManager>
     public GameObject wallsNroadsPanel;
     public GameObject spellsPanel;
     public GameObject controlsPanel;
+    public GameObject pausePanel;
 
     bool controls;
     int prevSpeed;
     bool pause;
+    bool pauseMenu;
     public enum Panels { Buildings, WallsRoads, Spells}
     public Panels panels;
 
@@ -37,6 +40,8 @@ public class UIManager : GameBehaviour<UIManager>
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape)) PauseGame();
+
         switch(panels)
         {
             case Panels.Buildings:
@@ -168,6 +173,17 @@ public class UIManager : GameBehaviour<UIManager>
 
         controlsPanel.SetActive(controls);
 
+    }
+
+    public void PauseGame()
+    {
+        pauseMenu = !pauseMenu;
+        pausePanel.SetActive(pauseMenu);
+
+        if (pauseMenu) _GM.gameState = GameManager.GameState.MenuPause;
+        else { 
+        _GM.gameState = GameManager.GameState.Playing;
+        Time.timeScale = 1;}
     }
    
 }

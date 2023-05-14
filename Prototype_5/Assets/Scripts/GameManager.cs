@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class GameManager : GameBehaviour<GameManager>
 {
+    public enum GameState { Playing, MenuPause, TimePause}
+    public GameState gameState;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +16,16 @@ public class GameManager : GameBehaviour<GameManager>
     // Update is called once per frame
     void Update()
     {
+        switch(gameState)
+        {
+            case GameState.Playing:
+                
+                break;
+            case GameState.MenuPause:
+                Time.timeScale = 0;
+                break;
 
+        }
     }
 
     public void TimeSclaeUpdater(int _switch)
