@@ -17,11 +17,18 @@ public class UIManager : GameBehaviour<UIManager>
     public GameObject spellsPanel;
     public GameObject controlsPanel;
     public GameObject pausePanel;
+    public GameObject questTemp;
+    public GameObject noManaPanel;
+    public GameObject noMoneyPanel;
+    public GameObject victoryPanel;
+    public GameObject defeatPanel;
 
     bool controls;
     int prevSpeed;
     bool pause;
     bool pauseMenu;
+    bool victory;
+    bool defeat;
     public enum Panels { Buildings, WallsRoads, Spells}
     public Panels panels;
 
@@ -37,6 +44,12 @@ public class UIManager : GameBehaviour<UIManager>
         EventManager.EndofDay -= UpdateMoney;
     }
 
+
+    private void Start()
+    {
+
+        ExecuteAfterSeconds(5, () => questTemp.SetActive(false));
+    }
 
     void Update()
     {
@@ -98,7 +111,8 @@ public class UIManager : GameBehaviour<UIManager>
         }
         else
         {
-            print("Not enough mana");
+            noManaPanel.SetActive(true);
+            ExecuteAfterSeconds(3, () => noManaPanel.SetActive(false));
         }
 
     }
@@ -186,4 +200,32 @@ public class UIManager : GameBehaviour<UIManager>
         Time.timeScale = 1;}
     }
    
+    public void Victory()
+    {
+        victory = !victory;
+
+        victoryPanel.SetActive(victory);
+        if (victory) _GM.gameState = GameManager.GameState.MenuPause;
+        else
+        {
+            _GM.gameState = GameManager.GameState.Playing;
+            Time.timeScale = 1;
+        }
+
+    }
+    
+    public void Defeat()
+    {
+        defeat = !defeat;
+
+        defeatPanel.SetActive(defeat);
+        if (defeat) _GM.gameState = GameManager.GameState.MenuPause;
+        else
+        {
+            _GM.gameState = GameManager.GameState.Playing;
+            Time.timeScale = 1;
+        }
+
+    }
+
 }

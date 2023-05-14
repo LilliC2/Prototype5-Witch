@@ -34,6 +34,12 @@ public class EnemyTowerManager : GameBehaviour
             }
         }
 
+        if (_LM.dayCount >= waveNumSpawn && CheckForStructures() == true && CheckForEnemies() == false)
+        {
+            _UI.Victory();
+        }
+        else if (_LM.dayCount >= waveNumSpawn && CheckForStructures() == false && CheckForEnemies() == true) _UI.Defeat();
+
         //DEBUG
         //if(Input.GetKeyDown(KeyCode.Space))
         //{
@@ -44,6 +50,30 @@ public class EnemyTowerManager : GameBehaviour
         //}
     }
 
+    bool CheckForStructures()
+    {
+        bool structuresRemain = true;
+        GameObject[] walls = GameObject.FindGameObjectsWithTag("Wall");
+        GameObject[] building = GameObject.FindGameObjectsWithTag("Building");
+        if (walls.Length == 0 && building.Length == 0)
+        {
+            print("No structures");
+            structuresRemain = false;
+        }
+        return structuresRemain;
+    }
+
+    bool CheckForEnemies()
+    {
+        bool enemiesRemain = true;
+        GameObject[] enemy = GameObject.FindGameObjectsWithTag("Enemy");
+        if (enemy.Length == 0)
+        {
+            print("No structures");
+            enemiesRemain = false;
+        }
+        return enemiesRemain;
+    }
 
     private void OnDrawGizmos()
     {
