@@ -41,174 +41,179 @@ public class ConnectingBuildingCheck : GameBehaviour
 
         CollisionCheck();
 
-        #region Make Straight Wall Correct Rotation
-
-        if(right && (!left && !up && !down))
+        if(gameObject.tag == "Wall")
         {
-            if (!gameObject.name.Contains("Straight"))
+            #region Make Straight Wall Correct Rotation
+
+            if (right && (!left && !up && !down))
             {
-                ChangePiece(straight, 0);
+                if (!gameObject.name.Contains("Straight"))
+                {
+                    ChangePiece(straight, 0);
+                }
+
+                wall.transform.eulerAngles = new Vector3(0, 0, 0);
             }
 
-            wall.transform.eulerAngles = new Vector3(0, 0, 0);
-        }
-            
-        if(left && (!right && !up && !down))
-        {
-            if (!gameObject.name.Contains("Straight"))
+            if (left && (!right && !up && !down))
             {
-                ChangePiece(straight, 0);
+                if (!gameObject.name.Contains("Straight"))
+                {
+                    ChangePiece(straight, 0);
+                }
+
+                wall.transform.eulerAngles = new Vector3(0, 0, 0);
             }
 
-            wall.transform.eulerAngles = new Vector3(0, 0, 0);
-        }
-
-        if (up && (!right && !left && !down))
-        {
-            if (!gameObject.name.Contains("Straight"))
+            if (up && (!right && !left && !down))
             {
-                ChangePiece(straight, 90);
+                if (!gameObject.name.Contains("Straight"))
+                {
+                    ChangePiece(straight, 90);
+                }
+
+                wall.transform.eulerAngles = new Vector3(0, 90, 0);
             }
 
-            wall.transform.eulerAngles = new Vector3(0, 90, 0);
-        }
-        
-        if (down && (!right && !left && !up))
-        {
-            if (!gameObject.name.Contains("Straight"))
+            if (down && (!right && !left && !up))
             {
-                ChangePiece(straight, 90);
+                if (!gameObject.name.Contains("Straight"))
+                {
+                    ChangePiece(straight, 90);
+                }
+
+                wall.transform.eulerAngles = new Vector3(0, 90, 0);
             }
 
-            wall.transform.eulerAngles = new Vector3(0, 90, 0);
-        }
-        
-        if (down && up && (!right && !left))
-        {
-            if (!gameObject.name.Contains("Straight"))
+            if (down && up && (!right && !left))
             {
-                ChangePiece(straight, 90);
+                if (!gameObject.name.Contains("Straight"))
+                {
+                    ChangePiece(straight, 90);
+                }
+
+                wall.transform.eulerAngles = new Vector3(0, 90, 0);
             }
 
-            wall.transform.eulerAngles = new Vector3(0, 90, 0);
-        }
-        
-        if (left && right && (!up && !down))
-        {
-            if (!gameObject.name.Contains("Straight"))
+            if (left && right && (!up && !down))
             {
-                ChangePiece(straight, 0);
+                if (!gameObject.name.Contains("Straight"))
+                {
+                    ChangePiece(straight, 0);
+                }
+
+                wall.transform.eulerAngles = new Vector3(0, 0, 0);
             }
 
-            wall.transform.eulerAngles = new Vector3(0, 0, 0);
-        }
 
 
 
+            #endregion
 
-        #endregion
+            #region Make Wall Corner and Correct Rotation
 
-        #region Make Wall Corner and Correct Rotation
-
-        if (right && down && (!left || !up))
-        {
-            if (!gameObject.name.Contains("Corner"))
+            if (right && down && (!left || !up))
             {
-                ChangePiece(corner, 0);
+                if (!gameObject.name.Contains("Corner"))
+                {
+                    ChangePiece(corner, 0);
+                }
+
+                wall.transform.eulerAngles = new Vector3(0, 0, 0);
             }
 
-            wall.transform.eulerAngles = new Vector3(0, 0, 0);
-        }
-
-        if (right && up && (!left || !down))
-        {
-            if (!gameObject.name.Contains("Corner"))
+            if (right && up && (!left || !down))
             {
-                ChangePiece(corner, 270);
+                if (!gameObject.name.Contains("Corner"))
+                {
+                    ChangePiece(corner, 270);
+                }
+
+                wall.transform.eulerAngles = new Vector3(0, 270, 0);
             }
 
-            wall.transform.eulerAngles = new Vector3(0, 270, 0);
-        }
-        
-        if (left && down && (!right || !up))
-        {
-            if (!gameObject.name.Contains("Corner"))
+            if (left && down && (!right || !up))
             {
-                ChangePiece(corner, 90);
+                if (!gameObject.name.Contains("Corner"))
+                {
+                    ChangePiece(corner, 90);
+                }
+
+                wall.transform.eulerAngles = new Vector3(0, 90, 0);
             }
 
-            wall.transform.eulerAngles = new Vector3(0, 90, 0);
-        }
-        
-        if (left && up && (!right || !down))
-        {
-            if (!gameObject.name.Contains("Corner"))
+            if (left && up && (!right || !down))
             {
-                ChangePiece(corner, 180);
+                if (!gameObject.name.Contains("Corner"))
+                {
+                    ChangePiece(corner, 180);
+                }
+
+                wall.transform.eulerAngles = new Vector3(0, 180, 0);
             }
 
-            wall.transform.eulerAngles = new Vector3(0, 180, 0);
-        }
+            #endregion
 
-        #endregion
+            #region Make T and Correct Rotation
 
-        #region Make T and Correct Rotation
-
-        if (right && down && up && (!left))
-        {
-            if (!gameObject.name.Contains("T"))
+            if (right && down && up && (!left))
             {
-                ChangePiece(T, 0);
+                if (!gameObject.name.Contains("T"))
+                {
+                    ChangePiece(T, 0);
+                }
+
+                wall.transform.eulerAngles = new Vector3(0, 0, 0);
             }
 
-            wall.transform.eulerAngles = new Vector3(0, 0, 0);
-        }
-        
-        if (left && down && right && (!up))
-        {
-            if (!gameObject.name.Contains("T"))
+            if (left && down && right && (!up))
             {
-                ChangePiece(T, 90);
+                if (!gameObject.name.Contains("T"))
+                {
+                    ChangePiece(T, 90);
+                }
+
+                wall.transform.eulerAngles = new Vector3(0, 90, 0);
             }
 
-            wall.transform.eulerAngles = new Vector3(0, 90, 0);
-        }
-        
-        if (left && down && up && (!right))
-        {
-            if (!gameObject.name.Contains("T"))
+            if (left && down && up && (!right))
             {
-                ChangePiece(T, 180);
+                if (!gameObject.name.Contains("T"))
+                {
+                    ChangePiece(T, 180);
+                }
+
+                wall.transform.eulerAngles = new Vector3(0, 180, 0);
             }
 
-            wall.transform.eulerAngles = new Vector3(0, 180, 0);
-        }
-        
-        if (left && right && up && (!down))
-        {
-            if (!gameObject.name.Contains("T"))
+            if (left && right && up && (!down))
             {
-                ChangePiece(T, 270);
+                if (!gameObject.name.Contains("T"))
+                {
+                    ChangePiece(T, 270);
+                }
+
+                wall.transform.eulerAngles = new Vector3(0, 270, 0);
             }
 
-            wall.transform.eulerAngles = new Vector3(0, 270, 0);
-        }
+            #endregion
 
-        #endregion
+            #region Make Plus and Correct Rotation
 
-        #region Make Plus and Correct Rotation
-
-        if (right && down && left && up)
-        {
-            if (!gameObject.name.Contains("Plus"))
+            if (right && down && left && up)
             {
-                ChangePiece(plus, 0);
+                if (!gameObject.name.Contains("Plus"))
+                {
+                    ChangePiece(plus, 0);
+                }
+
+                wall.transform.eulerAngles = new Vector3(0, 0, 0);
             }
 
-            wall.transform.eulerAngles = new Vector3(0, 0, 0);
+            #endregion
         }
 
-        #endregion
+
 
     }
 

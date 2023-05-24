@@ -9,7 +9,11 @@ public class CollisionDetector : GameBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.collider.CompareTag("Wall")) isTouching = true;
+        if (collision.collider.CompareTag("Wall"))
+        {
+            print("update istouching + " + gameObject.name);
+            isTouching = true;
+        }
 
     }
 

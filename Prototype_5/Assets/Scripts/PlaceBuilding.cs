@@ -70,17 +70,13 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
                 //remove costs
                 isBuildingHeld = false;
 
-
-
                 //place building change below to 1.5f later when juiced
                 heldBuidling = Instantiate(buildingPrefabs[buildingPrefabIndex], new Vector3(houseTilePos.x, 1.5f, houseTilePos.z), Quaternion.Euler(goalRotation));
                 heldBuidling.tag = "HeldBuilding";
                 if (tweener != null) tweener.Kill();
                 tweener = heldBuidling.transform.DOMoveY(1, 0.5f).SetEase(Ease.InBack).OnComplete(() => ResetTag()); //.OnComplete(() => //instaniate particle here);
 
-
-
-
+        
             }
 
             //cancel
@@ -90,8 +86,6 @@ public class PlaceBuilding : GameBehaviour<PlaceBuilding>
                 isBuildingHeld = false;
                 Cursor.visible = true;
                 
-
-
             }
 
         }
