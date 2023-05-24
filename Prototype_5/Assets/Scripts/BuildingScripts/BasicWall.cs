@@ -23,8 +23,6 @@ public class BasicWall : BuildingManager.Building
         {
             case <= 0:
                 gameObject.GetComponentInChildren<Renderer>().enabled = false;
-                explosion = gameObject.GetComponentInChildren<ParticleSystem>(true);
-                explosion.Play(true);
                 Destroy(this.gameObject,1);
                 break;
 

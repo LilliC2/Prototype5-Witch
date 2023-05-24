@@ -15,7 +15,7 @@ public class EnemyTowerManager : GameBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        waveNumSpawn = RandomIntBetweenTwoInt(5, 6);
+        waveNumSpawn = RandomIntBetweenTwoInt(1, 2);
         print("Wave will come on day " + waveNumSpawn);
     }
 
@@ -32,14 +32,7 @@ public class EnemyTowerManager : GameBehaviour
                 }
                 isEnemiesSpawned = true;
             }
-        }
-
-        if (_LM.dayCount >= waveNumSpawn && CheckForStructures() == true && CheckForEnemies() == false)
-        {
-            _UI.Victory();
-        }
-        else if (_LM.dayCount >= waveNumSpawn && CheckForStructures() == false && CheckForEnemies() == true) _UI.Defeat();
-
+        
         //DEBUG
         //if(Input.GetKeyDown(KeyCode.Space))
         //{
@@ -47,33 +40,11 @@ public class EnemyTowerManager : GameBehaviour
         //    {
         //        _EnM.SpawnEnemies(gameObject.transform.position, towerSpawnRadius);
         //    }
-        //}
+        //
+        }
     }
 
-    bool CheckForStructures()
-    {
-        bool structuresRemain = true;
-        GameObject[] walls = GameObject.FindGameObjectsWithTag("Wall");
-        GameObject[] building = GameObject.FindGameObjectsWithTag("Building");
-        if (walls.Length == 0 && building.Length == 0)
-        {
-            print("No structures");
-            structuresRemain = false;
-        }
-        return structuresRemain;
-    }
 
-    bool CheckForEnemies()
-    {
-        bool enemiesRemain = true;
-        GameObject[] enemy = GameObject.FindGameObjectsWithTag("Enemy");
-        if (enemy.Length == 0)
-        {
-            print("No structures");
-            enemiesRemain = false;
-        }
-        return enemiesRemain;
-    }
 
     private void OnDrawGizmos()
     {
