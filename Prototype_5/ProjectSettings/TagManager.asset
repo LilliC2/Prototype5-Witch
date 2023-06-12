@@ -11,6 +11,8 @@ TagManager:
   - Road
   - Enemy
   - Fireball
+  - PlayerProjectile
+  - Tree
   layers:
   - Default
   - TransparentFX
