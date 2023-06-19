@@ -20,8 +20,10 @@ public class Fireball : GameBehaviour
     void Update()
     {
         gameObject.transform.Rotate(0, 0, 50 * Time.deltaTime);
-        Vector3 position = Vector3.MoveTowards(body.position, target, _SM.fireball.speed * Time.fixedDeltaTime);
-        body.MovePosition(position);
+        //Vector3 position = _SM.fireball.speed
+        //body.MovePosition(position);
+
+        gameObject.transform.position = Vector3.MoveTowards(body.position, target, 1*Time.deltaTime); 
     }
 
 

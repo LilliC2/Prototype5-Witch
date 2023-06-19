@@ -5,7 +5,19 @@ using UnityEngine;
 public class CollisionDetector : GameBehaviour
 {
     public bool isTouching;
+    Collider col;
 
+    private void Awake()
+    {
+        col = GetComponent<Collider>();
+        StartCoroutine(wait());
+    }
+
+    IEnumerator wait()
+    {
+        yield return new WaitForEndOfFrame();
+        col.enabled = true;
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
